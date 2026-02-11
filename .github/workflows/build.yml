@@ -1,0 +1,73 @@
+name: Daily Signal Build
+
+on:
+  schedule:
+    # 5 AM PT = 13:00 UTC
+    - cron: '0 13 * * *'
+    # 10 AM PT = 18:00 UTC
+    - cron: '0 18 * * *'
+    # 3 PM PT = 23:00 UTC
+    - cron: '0 23 * * *'
+    # 8 PM PT = 04:00 UTC (next day)
+    - cron: '0 4 * * *'
+
+  workflow_dispatch:  # Manual trigger
+
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: python -m playwright install chromium --with-deps
+        continue-on-error: true
+
+      - name: Build site
+        run: python -m src.build
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/ data/seen_articles.json data/trends_history.json
+          git diff --cached --quiet || git commit -m "Signal update: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

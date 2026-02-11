@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive — Daily Signal Feed</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="AI, Web3, and emerging tech news aggregated from 50+ sources with trend detection.">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="site-logo">
+                <h1>Daily Signal Feed</h1>
+                <span class="tagline">AI &bull; Web3 &bull; Emerging Trends</span>
+            </a>
+            <nav class="main-nav">
+                <a href="/" class="">Home</a>
+                
+                <a href="/category/ai-llms.html"
+                   class="">
+                    AI &amp; LLMs
+                </a>
+                
+                <a href="/category/web3-defi.html"
+                   class="">
+                    Web3 &amp; DeFi
+                </a>
+                
+                <a href="/category/deals.html"
+                   class="">
+                    Deals &amp; Acquisitions
+                </a>
+                
+                <a href="/category/new-tools.html"
+                   class="">
+                    New Tools &amp; Apps
+                </a>
+                
+                <a href="/category/regulation.html"
+                   class="">
+                    Regulation &amp; Policy
+                </a>
+                
+                <a href="/category/social-buzz.html"
+                   class="">
+                    Social Buzz
+                </a>
+                
+                <a href="/category/emerging-trends.html"
+                   class="">
+                    Emerging Trends
+                </a>
+                
+                <a href="/archive.html" class="active">Archive</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+<div class="page-header">
+    <h2>Full Archive</h2>
+    <p>All 0 articles from the past 7 days</p>
+</div>
+
+<input type="text" class="search-bar" placeholder="Search the archive..." aria-label="Search articles">
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Last updated: February 11, 2026 at 19:39 UTC</p>
+            <p>0 articles from 0 sources</p>
+            <p>Daily Signal Feed &mdash; AI, Web3 &amp; Emerging Tech Aggregator</p>
+        </div>
+    </footer>
+
+    <script>
+    // Client-side search filter
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchBar = document.querySelector('.search-bar');
+        if (searchBar) {
+            searchBar.addEventListener('input', function(e) {
+                const query = e.target.value.toLowerCase();
+                const cards = document.querySelectorAll('.article-card, .archive-item');
+                cards.forEach(function(card) {
+                    const text = card.textContent.toLowerCase();
+                    card.style.display = text.includes(query) ? '' : 'none';
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>

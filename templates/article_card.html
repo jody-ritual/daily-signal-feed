@@ -1,0 +1,38 @@
+<article class="article-card{% if article.is_trending %} trending{% endif %}">
+    {% if article.is_trending %}
+    <span class="trending-badge">TRENDING</span>
+    {% endif %}
+
+    <div class="card-meta">
+        <span class="card-source">{{ article.source }}</span>
+        <span class="card-category" style="background: {{ categories.get(article.category, {}).get('color', '#6b7280') }};">
+            {{ categories.get(article.category, {}).get('label', article.category) }}
+        </span>
+        <span class="card-time">{{ article.relative_time }}</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="{{ article.link }}" target="_blank" rel="noopener">{{ article.title }}</a>
+    </h3>
+
+    {% if article.summary %}
+    <p class="card-summary">{{ article.summary }}</p>
+    {% endif %}
+
+    {% if article.engagement %}
+    <div class="card-engagement">
+        {% if article.engagement.likes %}
+        <span title="Likes">&#10084; {{ article.engagement.likes }}</span>
+        {% endif %}
+        {% if article.engagement.retweets %}
+        <span title="Retweets">&#8635; {{ article.engagement.retweets }}</span>
+        {% endif %}
+        {% if article.engagement.replies %}
+        <span title="Replies">&#128172; {{ article.engagement.replies }}</span>
+        {% endif %}
+        {% if article.engagement.upvotes %}
+        <span title="Upvotes">&#9650; {{ article.engagement.upvotes }}</span>
+        {% endif %}
+    </div>
+    {% endif %}
+</article>

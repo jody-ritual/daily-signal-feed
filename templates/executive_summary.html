@@ -1,0 +1,66 @@
+<section class="exec-summary">
+    <h2>Signal Summary</h2>
+
+    <div class="summary-grid">
+        <!-- Trending Topics -->
+        <div class="summary-card">
+            <h3>Trending Now</h3>
+            <ul class="trend-list">
+                {% for topic in summary.trending_topics[:7] %}
+                <li class="trend-item">
+                    <span class="trend-term">{{ topic.term }}</span>
+                    <span class="trend-meta">
+                        <span class="trend-mentions">{{ topic.mentions }} mentions</span>
+                        <span class="trend-direction {{ topic.direction }}">
+                            {% if topic.direction == 'up' %}&uarr;{% elif topic.direction == 'new' %}&#9733;{% elif topic.direction == 'down' %}&darr;{% else %}&bull;{% endif %}
+                        </span>
+                    </span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Category Activity -->
+        <div class="summary-card">
+            <h3>Category Activity</h3>
+            <div class="cat-bars">
+                {% for cat in summary.category_stats %}
+                {% if cat.count > 0 %}
+                <div class="cat-bar">
+                    <span class="cat-bar-label">{{ cat.label }}</span>
+                    <div class="cat-bar-track">
+                        <div class="cat-bar-fill" style="width: {{ cat.pct }}%; background: {{ cat.color }};"></div>
+                    </div>
+                    <span class="cat-bar-count">{{ cat.count }}</span>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="summary-card">
+            <h3>Today's Signal</h3>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <div class="stat-value">{{ summary.total_articles }}</div>
+                    <div class="stat-label">Articles</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{{ summary.active_sources }}</div>
+                    <div class="stat-label">Sources</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{{ summary.trending_count }}</div>
+                    <div class="stat-label">Trending</div>
+                </div>
+                <div class="stat-item">
+                    <span class="momentum-badge momentum-{{ summary.momentum }}">
+                        {{ summary.momentum }}
+                    </span>
+                    <div class="stat-label">Momentum</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

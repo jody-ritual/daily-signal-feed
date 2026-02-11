@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ category_info.label }} — Daily Signal Feed{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2 style="color: {{ category_info.color }}">{{ category_info.label }}</h2>
+    <p>{{ category_info.description }}</p>
+    <div class="page-stats">
+        <span><strong>{{ cat_article_count }}</strong> articles</span>
+        <span><strong>{{ cat_source_count }}</strong> sources</span>
+    </div>
+</div>
+
+<input type="text" class="search-bar" placeholder="Search {{ category_info.label }} articles..." aria-label="Search articles">
+
+{% for date_str, articles_group in date_groups %}
+<h3 class="date-label">{{ date_str }}</h3>
+<div class="article-grid">
+    {% for article in articles_group %}
+        {% include "article_card.html" %}
+    {% endfor %}
+</div>
+{% endfor %}
+{% endblock %}

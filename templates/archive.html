@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Archive — Daily Signal Feed{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2>Full Archive</h2>
+    <p>All {{ total_articles }} articles from the past 7 days</p>
+</div>
+
+<input type="text" class="search-bar" placeholder="Search the archive..." aria-label="Search articles">
+
+{% for date_str, articles_group in date_groups %}
+<h3 class="date-label">{{ date_str }}</h3>
+<div class="archive-list">
+    {% for article in articles_group %}
+    <div class="archive-item">
+        <span class="archive-source">{{ article.source }}</span>
+        <div class="archive-title">
+            <a href="{{ article.link }}" target="_blank" rel="noopener">{{ article.title }}</a>
+        </div>
+        <span class="archive-time">{{ article.relative_time }}</span>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+{% endblock %}

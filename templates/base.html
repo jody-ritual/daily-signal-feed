@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Daily Signal Feed{% endblock %}</title>
+    <link rel="stylesheet" href="{{ base_url }}/css/style.css">
+    <meta name="description" content="AI, Web3, and emerging tech news aggregated from 50+ sources with trend detection.">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="{{ base_url }}/" class="site-logo">
+                <h1>Daily Signal Feed</h1>
+                <span class="tagline">AI &bull; Web3 &bull; Emerging Trends</span>
+            </a>
+            <nav class="main-nav">
+                <a href="{{ base_url }}/" class="{% if active_page == 'home' %}active{% endif %}">Home</a>
+                {% for cat_id, cat in categories.items() %}
+                <a href="{{ base_url }}/category/{{ cat_id }}.html"
+                   class="{% if active_page == cat_id %}active{% endif %}">
+                    {{ cat.label }}{% if category_counts.get(cat_id) %} ({{ category_counts[cat_id] }}){% endif %}
+                </a>
+                {% endfor %}
+                <a href="{{ base_url }}/archive.html" class="{% if active_page == 'archive' %}active{% endif %}">Archive</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Last updated: {{ build_time }}</p>
+            <p>{{ total_articles }} articles from {{ source_count }} sources</p>
+            <p>Daily Signal Feed &mdash; AI, Web3 &amp; Emerging Tech Aggregator</p>
+        </div>
+    </footer>
+
+    <script>
+    // Client-side search filter
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchBar = document.querySelector('.search-bar');
+        if (searchBar) {
+            searchBar.addEventListener('input', function(e) {
+                const query = e.target.value.toLowerCase();
+                const cards = document.querySelectorAll('.article-card, .archive-item');
+                cards.forEach(function(card) {
+                    const text = card.textContent.toLowerCase();
+                    card.style.display = text.includes(query) ? '' : 'none';
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>

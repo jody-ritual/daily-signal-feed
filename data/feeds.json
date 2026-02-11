@@ -1,0 +1,411 @@
+{
+  "categories": {
+    "ai-llms": {
+      "label": "AI & LLMs",
+      "description": "LLM releases, AI research, tools, and agents",
+      "color": "#4F46E5"
+    },
+    "web3-defi": {
+      "label": "Web3 & DeFi",
+      "description": "Crypto, blockchain, DeFi protocols, and ecosystem updates",
+      "color": "#8B5CF6"
+    },
+    "deals": {
+      "label": "Deals & Acquisitions",
+      "description": "Funding rounds, M&A activity, and company announcements",
+      "color": "#EC4899"
+    },
+    "new-tools": {
+      "label": "New Tools & Apps",
+      "description": "Product launches, open-source projects, and indie tools",
+      "color": "#F59E0B"
+    },
+    "regulation": {
+      "label": "Regulation & Policy",
+      "description": "AI governance, crypto regulation, and policy updates",
+      "color": "#EF4444"
+    },
+    "social-buzz": {
+      "label": "Social Buzz",
+      "description": "Trending discussions from Reddit and Twitter communities",
+      "color": "#06B6D4"
+    },
+    "emerging-trends": {
+      "label": "Emerging Trends",
+      "description": "Auto-detected rising topics and emerging technologies",
+      "color": "#10B981"
+    }
+  },
+
+  "feeds": [
+    {
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "Anthropic Blog",
+      "url": "https://www.anthropic.com/rss.xml",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "DeepMind Blog",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "Meta AI Blog",
+      "url": "https://ai.meta.com/blog/rss/",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "NVIDIA AI Blog",
+      "url": "https://blogs.nvidia.com/feed/",
+      "category": "ai-llms",
+      "keywords": "ai_core"
+    },
+    {
+      "name": "Microsoft AI Blog",
+      "url": "https://blogs.microsoft.com/ai/feed/",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "ArXiv - Artificial Intelligence",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "ArXiv - Computation & Language",
+      "url": "https://rss.arxiv.org/rss/cs.CL",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "ArXiv - Machine Learning",
+      "url": "https://rss.arxiv.org/rss/cs.LG",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "TechCrunch - AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "The Verge - AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "VentureBeat - AI",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "category": "ai-llms",
+      "keywords": []
+    },
+    {
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/feed/",
+      "category": "ai-llms",
+      "keywords": "ai_core"
+    },
+    {
+      "name": "Ars Technica - AI",
+      "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+      "category": "ai-llms",
+      "keywords": "ai_core"
+    },
+    {
+      "name": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/feeds/feed.rss",
+      "category": "ai-llms",
+      "keywords": "ai_core"
+    },
+    {
+      "name": "a16z Blog",
+      "url": "https://a16z.com/feed/",
+      "category": "ai-llms",
+      "keywords": "ai_core"
+    },
+    {
+      "name": "Sequoia Capital",
+      "url": "https://www.sequoiacap.com/feed/",
+      "category": "ai-llms",
+      "keywords": "ai_core"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/rss.xml",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/feed",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "CoinTelegraph",
+      "url": "https://cointelegraph.com/rss",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "Ethereum Foundation Blog",
+      "url": "https://blog.ethereum.org/feed.xml",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "Chainlink Blog",
+      "url": "https://blog.chain.link/rss/",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "Bankless",
+      "url": "https://www.bankless.com/rss.xml",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/feed",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "Rekt News",
+      "url": "https://rekt.news/feed.xml",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "Messari",
+      "url": "https://messari.io/rss",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "Solana Blog",
+      "url": "https://solana.com/news/rss.xml",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "Polygon Blog",
+      "url": "https://polygon.technology/blog/rss.xml",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "Paradigm Blog",
+      "url": "https://www.paradigm.xyz/feed.xml",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "Flashbots Blog",
+      "url": "https://writings.flashbots.net/rss.xml",
+      "category": "web3-defi",
+      "keywords": []
+    },
+    {
+      "name": "TechCrunch - Startups",
+      "url": "https://techcrunch.com/category/startups/feed/",
+      "category": "deals",
+      "keywords": "deals_funding"
+    },
+    {
+      "name": "TechCrunch - Venture",
+      "url": "https://techcrunch.com/category/venture/feed/",
+      "category": "deals",
+      "keywords": []
+    },
+    {
+      "name": "Crunchbase News",
+      "url": "https://news.crunchbase.com/feed/",
+      "category": "deals",
+      "keywords": "deals_funding"
+    },
+    {
+      "name": "Hacker News - Front Page",
+      "url": "https://hnrss.org/frontpage",
+      "category": "new-tools",
+      "keywords": "ai_core"
+    },
+    {
+      "name": "Hacker News - Best",
+      "url": "https://hnrss.org/best",
+      "category": "new-tools",
+      "keywords": "web3_core"
+    },
+    {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed",
+      "category": "new-tools",
+      "keywords": "ai_core"
+    },
+    {
+      "name": "Indie Hackers",
+      "url": "https://www.indiehackers.com/feed.xml",
+      "category": "new-tools",
+      "keywords": "ai_core"
+    },
+    {
+      "name": "CoinDesk - Policy",
+      "url": "https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml&_website=coindesk&category=policy",
+      "category": "regulation",
+      "keywords": []
+    },
+    {
+      "name": "Reuters - Technology",
+      "url": "https://www.reutersagency.com/feed/",
+      "category": "regulation",
+      "keywords": "regulation"
+    },
+    {
+      "name": "r/artificial",
+      "url": "https://www.reddit.com/r/artificial/.rss",
+      "category": "social-buzz",
+      "type": "reddit",
+      "keywords": []
+    },
+    {
+      "name": "r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/.rss",
+      "category": "social-buzz",
+      "type": "reddit",
+      "keywords": []
+    },
+    {
+      "name": "r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/.rss",
+      "category": "social-buzz",
+      "type": "reddit",
+      "keywords": []
+    },
+    {
+      "name": "r/ChatGPT",
+      "url": "https://www.reddit.com/r/ChatGPT/.rss",
+      "category": "social-buzz",
+      "type": "reddit",
+      "keywords": []
+    },
+    {
+      "name": "r/OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/.rss",
+      "category": "social-buzz",
+      "type": "reddit",
+      "keywords": []
+    },
+    {
+      "name": "r/StableDiffusion",
+      "url": "https://www.reddit.com/r/StableDiffusion/.rss",
+      "category": "social-buzz",
+      "type": "reddit",
+      "keywords": []
+    },
+    {
+      "name": "r/cryptocurrency",
+      "url": "https://www.reddit.com/r/cryptocurrency/.rss",
+      "category": "social-buzz",
+      "type": "reddit",
+      "keywords": []
+    },
+    {
+      "name": "r/defi",
+      "url": "https://www.reddit.com/r/defi/.rss",
+      "category": "social-buzz",
+      "type": "reddit",
+      "keywords": []
+    },
+    {
+      "name": "r/ethereum",
+      "url": "https://www.reddit.com/r/ethereum/.rss",
+      "category": "social-buzz",
+      "type": "reddit",
+      "keywords": []
+    },
+    {
+      "name": "r/web3",
+      "url": "https://www.reddit.com/r/web3/.rss",
+      "category": "social-buzz",
+      "type": "reddit",
+      "keywords": []
+    },
+    {
+      "name": "r/SideProject",
+      "url": "https://www.reddit.com/r/SideProject/.rss",
+      "category": "new-tools",
+      "type": "reddit",
+      "keywords": "ai_core"
+    },
+    {
+      "name": "r/startups",
+      "url": "https://www.reddit.com/r/startups/.rss",
+      "category": "deals",
+      "type": "reddit",
+      "keywords": "deals_funding"
+    }
+  ],
+
+  "twitter_searches": [
+    {
+      "query": "AI startup launch OR launched OR releasing",
+      "category": "new-tools",
+      "max_results": 30
+    },
+    {
+      "query": "LLM new model OR benchmark OR release",
+      "category": "ai-llms",
+      "max_results": 30
+    },
+    {
+      "query": "crypto acquired OR acquisition OR funding OR raised",
+      "category": "deals",
+      "max_results": 30
+    },
+    {
+      "query": "Web3 new protocol OR launch OR mainnet",
+      "category": "web3-defi",
+      "max_results": 30
+    },
+    {
+      "query": "DeFi new vault OR yield OR protocol launch",
+      "category": "web3-defi",
+      "max_results": 20
+    },
+    {
+      "query": "AI agent tool OR framework OR open source",
+      "category": "new-tools",
+      "max_results": 20
+    }
+  ]
+}
