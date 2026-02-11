@@ -13,6 +13,7 @@
 
 <input type="text" class="search-bar" placeholder="Search {{ category_info.label }} articles..." aria-label="Search articles">
 
+{% if date_groups %}
 {% for date_str, articles_group in date_groups %}
 <h3 class="date-label">{{ date_str }}</h3>
 <div class="article-grid">
@@ -21,4 +22,10 @@
     {% endfor %}
 </div>
 {% endfor %}
+{% else %}
+<div style="text-align:center; padding:3rem 1rem; opacity:0.6;">
+    <p style="font-size:1.2rem;">No articles in this category yet.</p>
+    <p>Articles will appear here once the next scheduled build picks them up.</p>
+</div>
+{% endif %}
 {% endblock %}

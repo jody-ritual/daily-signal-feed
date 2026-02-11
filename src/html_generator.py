@@ -133,11 +133,9 @@ class HTMLGenerator:
         cat_template = self.env.get_template("category.html")
         for cat_id, cat_info in self.categories.items():
             cat_articles = [a for a in articles if a.get("category") == cat_id]
-            if not cat_articles:
-                continue
 
-            cat_date_groups = self._group_by_date(cat_articles)
-            cat_sources = len({a["source"] for a in cat_articles})
+            cat_date_groups = self._group_by_date(cat_articles) if cat_articles else []
+            cat_sources = len({a["source"] for a in cat_articles}) if cat_articles else 0
 
             html = cat_template.render(
                 category_info=cat_info,
