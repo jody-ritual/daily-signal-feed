@@ -19,22 +19,22 @@
                 
                 <a href="/daily-signal-feed/category/ai-llms.html"
                    class="">
-                    AI &amp; LLMs (555)
+                    AI &amp; LLMs (43)
                 </a>
                 
                 <a href="/daily-signal-feed/category/web3-defi.html"
                    class="">
-                    Web3 &amp; DeFi (16)
+                    Web3 &amp; DeFi (42)
                 </a>
                 
                 <a href="/daily-signal-feed/category/deals.html"
                    class="">
-                    Deals &amp; Acquisitions (4)
+                    Deals &amp; Acquisitions (13)
                 </a>
                 
                 <a href="/daily-signal-feed/category/new-tools.html"
                    class="active">
-                    New Tools &amp; Apps (3)
+                    New Tools &amp; Apps (19)
                 </a>
                 
                 <a href="/daily-signal-feed/category/regulation.html"
@@ -44,7 +44,7 @@
                 
                 <a href="/daily-signal-feed/category/social-buzz.html"
                    class="">
-                    Social Buzz (48)
+                    Social Buzz (84)
                 </a>
                 
                 <a href="/daily-signal-feed/category/emerging-trends.html"
@@ -63,8 +63,8 @@
     <h2 style="color: #F59E0B">New Tools &amp; Apps</h2>
     <p>Product launches, open-source projects, and indie tools</p>
     <div class="page-stats">
-        <span><strong>3</strong> articles</span>
-        <span><strong>2</strong> sources</span>
+        <span><strong>19</strong> articles</span>
+        <span><strong>3</strong> sources</span>
     </div>
 </div>
 
@@ -83,15 +83,15 @@
         <span class="card-category" style="background: #F59E0B;">
             New Tools &amp; Apps
         </span>
-        <span class="card-time">1h ago</span>
+        <span class="card-time">27m ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/SideProject/comments/1snqvq5/i_gave_a_budget_and_a_stripe_account_to_a_claude/" target="_blank" rel="noopener">I gave a budget and a Stripe account to a Claude agent and told it to pay its own bills.</a>
+        <a href="https://www.reddit.com/r/SideProject/comments/1so1hj7/built_an_app_because_redditors_stopped_writing/" target="_blank" rel="noopener">Built an app because Redditors stopped writing tl;dr&#39;s</a>
     </h3>
 
     
-    <p class="card-summary">The Concept: I’ve automated myself out of my own side project. Using Claude, launchd, and a fair amount of glue code, I created an agent that wakes up, checks its bank balance, picks a revenue-generating action from a playbook, and executes it. The Stakes: This isn&#39;t a simulation. It has a real credit card and a real deadline. If it doesn&#39;t hit $100 in revenue by May 13th to cover a tax bill, the...</p>
+    <p class="card-summary">I&#39;ll be the first to admit I spend too much time on here. r/AmItheAsshole , r/personalfinance, r/legaladvice. Subs where people write walls of text and there&#39;s maybe one useful sentence buried in paragraph six. There aren&#39;t as many tl;drs on long posts as I&#39;d like these days. So.. I built an app that makes one for me! It&#39;s called tldr Summary. Floating button sits on your screen. Tap it, draw a...</p>
     
 
     
@@ -109,11 +109,11 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/SideProject/comments/1snq576/always_wanted_a_yearly_calendar_that_wasnt_a/" target="_blank" rel="noopener">Always wanted a yearly calendar that wasn&#39;t a separate app from the day, week and month so I made it</a>
+        <a href="https://www.reddit.com/r/SideProject/comments/1so0lrf/i_built_a_tool_that_turns_any_text_into_a/" target="_blank" rel="noopener">I built a tool that turns any text into a LinkedIn/Instagram/TikTok carousel in 30 seconds. No subscription. Here&#39;s what I learned shipping it.</a>
     </h3>
 
     
-    <p class="card-summary">Realized this might actually be a product. It&#39;s still buggy but I added some useful/cool features if anyone wants to try it out: See your year — and month, week, and day in one place Share and compare your calendar with others See your year in pictures Drag and drop to make itineraries (i.e. events within events) Customizable internal and external event pages (i.e. Invite friends off the app)...</p>
+    <p class="card-summary">The problem was obvious to me because I lived it. Making one carousel meant: ChatGPT for copy, Canva for design, manual resizing for every platform, another tab for the caption. 2 hours minimum. Every time. So I built Slidelo. Paste a topic, URL, PDF, or raw text, AI writes the hook, bullets, and CTA, designs the slides, sizes them for whatever platform, and generates the caption. Under 30...</p>
     
 
     
@@ -123,19 +123,386 @@
     
 
     <div class="card-meta">
-        <span class="card-source">Hacker News - Front Page</span>
+        <span class="card-source">r/SideProject</span>
         <span class="card-category" style="background: #F59E0B;">
             New Tools &amp; Apps
         </span>
-        <span class="card-time">5h ago</span>
+        <span class="card-time">2h ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://lucasgerads.com/blog/lecroy-mcp-spice-demo/" target="_blank" rel="noopener">Show HN: Spice simulation → oscilloscope → verification with Claude Code</a>
+        <a href="https://www.reddit.com/r/SideProject/comments/1snxzwj/i_got_80_hit5_retrieval_without_vectors/" target="_blank" rel="noopener">I got 80% hit@5 retrieval without vectors, embeddings, or any ML — just regex + TF-IDF over code signatures</a>
     </h3>
 
     
-    <p class="card-summary">I built MCP servers for my oscilloscope and SPICE simulator so Claude Code can close the loop between simulation and real hardware. Comments URL: https://news.ycombinator.com/item?id=47801255 Points: 53 # Comments: 11</p>
+    <p class="card-summary">Been experimenting with context compression for local models. Wanted to test how far pure heuristic retrieval can go before you actually need vectors. Method: extract only function signatures + class shapes from source files, run TF-IDF over them against the query. Results across 18 repos, 90 tasks: - 80% hit@5 vs 13.6% random baseline - 98.1% token reduction (avg 80K → 1.5K) - Zero dependencies...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/SideProject</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">3h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/SideProject/comments/1snwzuz/i_got_tired_of_the_saveswitchtweaksave_loop_so_i/" target="_blank" rel="noopener">I got tired of the save→switch→tweak→save loop, so I built a React component that lets you tune CSS live and copy it back out</a>
+    </h3>
+
+    
+    <p class="card-summary">Dev loop that was killing me: write value -&amp;gt; save -&amp;gt; switch to browser -&amp;gt; eyeball -&amp;gt; switch back -&amp;gt; tweak 2px -&amp;gt; save -&amp;gt; repeat. So I made maptiveui-tunable - a dev-only React component. Wrap an element, a small badge shows up on hover in dev, click it, drag sliders / pick colors in a floating panel, then hit Copy CSS or Copy Tailwind and paste back into your source. It&#39;s not...</p>
+    
+
+    
+</article>
+    
+</div>
+
+<h3 class="date-label">April 16, 2026</h3>
+<div class="article-grid">
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Hacker News - Best</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">14h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://techcrunch.com/2026/04/16/everything-we-like-is-a-psyop/" target="_blank" rel="noopener">Everything we like is a psyop?</a>
+    </h3>
+
+    
+    <p class="card-summary">Article URL: https://techcrunch.com/2026/04/16/everything-we-like-is-a-psyop/ Comments URL: https://news.ycombinator.com/item?id=47800738 Points: 285 # Comments: 206</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Hacker News - Best</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">18h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://clojure.org/about/documentary" target="_blank" rel="noopener">Official Clojure Documentary page with Video, Shownotes, and Links</a>
+    </h3>
+
+    
+    <p class="card-summary">Article URL: https://clojure.org/about/documentary Comments URL: https://news.ycombinator.com/item?id=47798345 Points: 271 # Comments: 74</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Hacker News - Best</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">19h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html" target="_blank" rel="noopener">Android CLI: Build Android apps 3x faster using any agent</a>
+    </h3>
+
+    
+    <p class="card-summary">Article URL: https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html Comments URL: https://news.ycombinator.com/item?id=47797665 Points: 270 # Comments: 110</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Product Hunt</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">19h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.producthunt.com/products/navox-agents" target="_blank" rel="noopener">Navox Agents</a>
+    </h3>
+
+    
+    <p class="card-summary">Specialist AI engineering team for Claude Code Discussion | Link</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Product Hunt</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">20h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.producthunt.com/products/openai" target="_blank" rel="noopener">Codex 2.0 by OpenAI</a>
+    </h3>
+
+    
+    <p class="card-summary">Codex now runs apps, automates tasks, codes &amp;amp; more Discussion | Link</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Product Hunt</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">22h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.producthunt.com/products/cerberus-3" target="_blank" rel="noopener">Cerberus</a>
+    </h3>
+
+    
+    <p class="card-summary">Cursor for AI hacking that can&#39;t go out of scope Discussion | Link</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Product Hunt</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">23h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.producthunt.com/products/cloudflare" target="_blank" rel="noopener">Cloudflare Email Service</a>
+    </h3>
+
+    
+    <p class="card-summary">Turn any email inbox into a native interface for AI agents Discussion | Link</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Product Hunt</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">23h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.producthunt.com/products/claude-opus-4-7" target="_blank" rel="noopener">Claude Opus 4.7</a>
+    </h3>
+
+    
+    <p class="card-summary">Claude’s most capable model for reasoning and agentic coding Discussion | Link</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Hacker News - Best</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">1d ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262" target="_blank" rel="noopener">€54k spike in 13h from unrestricted Firebase browser key accessing Gemini APIs</a>
+    </h3>
+
+    
+    <p class="card-summary">Article URL: https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262 Comments URL: https://news.ycombinator.com/item?id=47791871 Points: 390 # Comments: 282</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Hacker News - Best</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">1d ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://blog.calif.io/p/codex-hacked-a-samsung-tv" target="_blank" rel="noopener">Codex Hacked a Samsung TV</a>
+    </h3>
+
+    
+    <p class="card-summary">Article URL: https://blog.calif.io/p/codex-hacked-a-samsung-tv Comments URL: https://news.ycombinator.com/item?id=47791212 Points: 246 # Comments: 128</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Product Hunt</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">1d ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.producthunt.com/products/form-dump" target="_blank" rel="noopener">Form Dump</a>
+    </h3>
+
+    
+    <p class="card-summary">The form backend for AI Agents (and Humans) Discussion | Link</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Product Hunt</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">1d ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.producthunt.com/products/calendarpipe" target="_blank" rel="noopener">CalendarPipe</a>
+    </h3>
+
+    
+    <p class="card-summary">Programmable calendar sync for humans and AI agents Discussion | Link</p>
+    
+
+    
+</article>
+    
+</div>
+
+<h3 class="date-label">April 15, 2026</h3>
+<div class="article-grid">
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Product Hunt</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">1d ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.producthunt.com/products/athena-9b536c7c-a0eb-4ab0-a230-ea0de18d0f47" target="_blank" rel="noopener">Athena</a>
+    </h3>
+
+    
+    <p class="card-summary">Claude Code for Product Teams Discussion | Link</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Product Hunt</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">1d ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.producthunt.com/products/coagentor" target="_blank" rel="noopener">CoAgentor</a>
+    </h3>
+
+    
+    <p class="card-summary">AI Agents that participate live in meetings Discussion | Link</p>
+    
+
+    
+</article>
+    
+</div>
+
+<h3 class="date-label">April 14, 2026</h3>
+<div class="article-grid">
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">Product Hunt</span>
+        <span class="card-category" style="background: #F59E0B;">
+            New Tools &amp; Apps
+        </span>
+        <span class="card-time">3d ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.producthunt.com/products/geekflare-api" target="_blank" rel="noopener">Geekflare Scraping API v2</a>
+    </h3>
+
+    
+    <p class="card-summary">RAG-ready web scraping that cuts your LLM token costs Discussion | Link</p>
     
 
     
@@ -149,8 +516,8 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>Last updated: April 17, 2026 at 06:03 UTC</p>
-            <p>626 articles from 25 sources</p>
+            <p>Last updated: April 17, 2026 at 14:14 UTC</p>
+            <p>201 articles from 26 sources</p>
             <p>Daily Signal Feed &mdash; AI, Web3 &amp; Emerging Tech Aggregator</p>
         </div>
     </footer>
