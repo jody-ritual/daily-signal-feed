@@ -19,12 +19,12 @@
                 
                 <a href="/daily-signal-feed/category/ai-llms.html"
                    class="">
-                    AI &amp; LLMs (2)
+                    AI &amp; LLMs (1)
                 </a>
                 
                 <a href="/daily-signal-feed/category/web3-defi.html"
                    class="">
-                    Web3 &amp; DeFi (8)
+                    Web3 &amp; DeFi (2)
                 </a>
                 
                 <a href="/daily-signal-feed/category/deals.html"
@@ -34,7 +34,7 @@
                 
                 <a href="/daily-signal-feed/category/new-tools.html"
                    class="">
-                    New Tools &amp; Apps (1)
+                    New Tools &amp; Apps (3)
                 </a>
                 
                 <a href="/daily-signal-feed/category/regulation.html"
@@ -44,7 +44,7 @@
                 
                 <a href="/daily-signal-feed/category/social-buzz.html"
                    class="active">
-                    Social Buzz (12)
+                    Social Buzz (5)
                 </a>
                 
                 <a href="/daily-signal-feed/category/emerging-trends.html"
@@ -63,7 +63,7 @@
     <h2 style="color: #06B6D4">Social Buzz</h2>
     <p>Trending discussions from Reddit and Twitter communities</p>
     <div class="page-stats">
-        <span><strong>12</strong> articles</span>
+        <span><strong>5</strong> articles</span>
         <span><strong>1</strong> sources</span>
     </div>
 </div>
@@ -85,37 +85,15 @@
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">29m ago</span>
+        <span class="card-time">1h ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubrn1a/2_radeon_r9700_qwen_36_27b_q8_mtp_on_llamacpp/" target="_blank" rel="noopener">2× Radeon R9700 — Qwen 3.6 27B Q8 MTP on llama.cpp</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubx7rq/qwen_27b_for_planning_qwen_35ba3b_for_execution/" target="_blank" rel="noopener">Qwen 27B for planning, Qwen 35B-A3B for execution?</a>
     </h3>
 
     
-    <p class="card-summary">There isn&#39;t much information around about multi-GPU setups with the R9700, so I&#39;m writing this up in case it helps anyone in the same situation. Here&#39;s my setup, the tests I ran, and the numbers from the server logs. Setup ThinkStation P7, Xeon w7-3455, 128 GB RDIMM 2× Gigabyte Radeon AI PRO R9700 32 GB (64 GB VRAM total) Ubuntu 24.04 LTS, Docker 29.5.3, containers managed with Komodo (komo.do)...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">41m ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubrcwj/tokenomics/" target="_blank" rel="noopener">Tokenomics</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/HOLUPREDICTIONS [link] &amp;#32; [comments]</p>
+    <p class="card-summary">My 32GB unified memory setup runs both, though 27B even with MTP is something like 7-10 tok/sec. Usable but not real time by any means. (~18 tok/sec with 35B-A3B) Would it be worth using 27B to plan long horizon tasks, put together the PLAN.md, and have 35B-A4B iterate over it quickly? I can&#39;t load both models together, so I&#39;d swap once the plan is set. Right now I&#39;m using the latter exclusively...</p>
     
 
     
@@ -135,11 +113,59 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubqn87/rocm_vs_vulkan_vs_vllm_on_dual_r9700s/" target="_blank" rel="noopener">ROCm vs Vulkan vs vLLM on Dual R9700&#39;s</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubx4rw/best_local_model_for_vision_2nd_benchmark_update/" target="_blank" rel="noopener">Best local model for vision - 2nd benchmark update - 21 Jun 2026</a>
     </h3>
 
     
-    <p class="card-summary">Just wanted to share these numbers I saw running Qwen3.6 35BA3 and Qwen3.6 27B and the big increase I saw going to vLLM. I was just expecting better concurrency but ended up with a lot better speeds. llama.cpp services Running ROCm and Vulkan Model Backend Gen 35B-A3B Q6_K_XL (MTP) ROCm ~106 t/s 27B Q6_K_XL (MTP) ROCm ~44 t/s 35B-A3B Q6_K_XL (MTP) Vulkan ~87 t/s 27B Q6_K_XL (MTP) Vulkan ~41 t/s...</p>
+    <p class="card-summary">I previously posted the first results of my VLM benchmark. There were a few useful comments and observations I took into account, to revise and expand my benchmark: I initially did not take into account the Gemma 4 vision budget which defaults to 280, essentially making it useless. I have increased it to maximum level, with the following optimal setttings which were posted here recently...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">1h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubwo03/qwen_36_27b_abliterated_apostate/" target="_blank" rel="noopener">Qwen 3.6 27b Abliterated (apostate)</a>
+    </h3>
+
+    
+    <p class="card-summary">I&#39;ve been working on a project called Apostate and have finally released my first large model with it on Hugging Face. Qwen 3.6 27B with safety alignment removed down from 92% to 7.6% refusal rate with minimal impact on the model&#39;s capabilities (0.120 KL). Qwen 3.6 27B Apostate &amp;#32; submitted by &amp;#32; /u/AccountAntique9327 [link] &amp;#32; [comments]</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">1h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubw3mo/i_forked_ik_llamacpp_and_added_a_numa_mirror_mode/" target="_blank" rel="noopener">I forked ik_llama.cpp and added a &#34;--numa mirror&#34; mode to maximize performance on multi-socket CPU systems. Just sharing and looking for testers!</a>
+    </h3>
+
+    
+    <p class="card-summary">GitHub: https://github.com/mikechambers84/ik_llama.cpp/tree/numa-mirror Be sure to checkout the numa-mirror branch. Sharing this for anyone else who&#39;s trying to use their multi-socket CPU systems for inference. I&#39;ve been wanting a NUMA mirror mode for a long time, so I finally forked ik_llama.cpp and added it. ik_llama.cpp is a llama.cpp fork that adds major performance improvements for CPU...</p>
     
 
     
@@ -159,201 +185,11 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubp4q3/sandboxing_code_execution_for_ai_agents/" target="_blank" rel="noopener">Sandboxing code execution for AI agents</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubuy8w/i_pretrained_and_post_trained_a_500m_parameter/" target="_blank" rel="noopener">I pretrained and post trained a 500M parameter LLM and 330M parameter Image generator from scratch</a>
     </h3>
 
     
-    <p class="card-summary">For those giving their agents the ability to execute code, how are you sandboxing it? The spectrum seems to be: Docker containers: familiar, decent isolation, but heavyweight for per-request sandboxing microVMs: great isolation, fast boot, but operational complexity WASM: lightweight and fast, but limited ecosystem and capabilities Just running it on the host and praying What I&#39;m trying to solve...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">2h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1uboiko/rollin_mimo25_on_two_halo_strixeses/" target="_blank" rel="noopener">Rollin&#39; MiMo-2.5 on two Halo Strixeses</a>
-    </h3>
-
-    
-    <p class="card-summary">Twas a very high effort post on two 128GB machines with 8060s, proxmox/containers, usb4net secondary link and a rocm llama.cpp built with a crowbar and a lot of swearing options. Not mentioning the hair pulling while trying to build the other backends. So far 356pp and 15tg, provided it&#39;s at 1% or 10k of context length. Dis good? What do? Am I considered aristocracy here? As for the other...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">3h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubnj2l/816_mi50s_minimax_m3_19_tps_tg_peak/" target="_blank" rel="noopener">8-16 MI50s Minimax M3 @19 tps TG (peak)</a>
-    </h3>
-
-    
-    <p class="card-summary">TL;DR Speeds are not too ugly for this old 2018 hardware but imo, not very usable for agentic coding (if you compare with qwen3.6 27B on 8 MI50 @ 50 tps TG 800 tps PP). More concerning is that the reasoning output is very very long and still didn’t check about the quality of code output… As said before, I think there’s still room to have higher speeds (by updating the software &amp;amp; hardware...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">3h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubnen1/thinking_loop_bug_in_opencode_with_local_model/" target="_blank" rel="noopener">Thinking loop bug in OpenCode with local model?</a>
-    </h3>
-
-    
-    <p class="card-summary">https://reddit.com/link/1ubnen1/video/be48o8qdbm8h1/player For some reason Opencode keeps &amp;quot;self-prompting&amp;quot; itself so OpenCode is stuck in thinking mode until I press Escape to interrupt him. Does anyone know how to fix it? I&#39;m using two GPUs (16GB+12GB, RTX4080 (16GB)+RTX3080TI (12GB). I tried changing models and quants (Qwen 3.6-27B_Q6_K, Qwen 3.6-27B_Q5_K, Qwen 3.6-27B_Q4_K_M...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">4h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubmy0o/r9700_abysmal_performance_getting_desparate/" target="_blank" rel="noopener">R9700 abysmal performance, getting desparate</a>
-    </h3>
-
-    
-    <p class="card-summary">I&#39;ve been trying to get my 2x R9700 setup to work for the past two weeks. This has been such a time sink I wish I had just gone with nvidia. At this point I&#39;m close to selling the cards. I need vLLM. This is a dedicated setup for multi-user serving. I&#39;ve tried the https://github.com/kyuz0/amd-r9700-vllm-toolboxes and...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">5h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ublwmp/why_is_autoround_being_slept_on_so_hard/" target="_blank" rel="noopener">Why is AutoRound being slept on so hard?</a>
-    </h3>
-
-    
-    <p class="card-summary">Seriously, why is almost nobody talking about AutoRound here? I’ve been experimenting with it on Qwen3.6 27B lately (running an AMD setup), and the perplexity/accuracy retention at low bits absolutely blows standard AWQ or RTN out of the water. Especially for models with complex reasoning or long contexts, it seems like a total cheat code. Yet, if you look at Hugging Face, almost every major...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">5h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ublvag/watch_local_llms_escape_the_rooms_you_design/" target="_blank" rel="noopener">Watch local LLMs escape the rooms you design</a>
-    </h3>
-
-    
-    <p class="card-summary">Hello! I&#39;d like to share my repo for WATCH MY ESCAPE: https://github.com/cjami/watch-my-escape It&#39;s an inverted escape room game where you design the maps and LLMs have to try to escape them. It uses traditional action verbs (e.g. push, pull, pick-up) to interact with the visible environment, just like classic adventure games. There are currently 5 model presets (downloads when running an escape...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">5h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubll9u/glm52_benchmarked_on_deepswe_beats_gemini_gpt54/" target="_blank" rel="noopener">GLM-5.2 benchmarked on DeepSWE: Beats Gemini &amp;amp; GPT-5.4, but the token volume/cost makes it wildly inefficient? (Theo - t3.gg)</a>
-    </h3>
-
-    
-    <p class="card-summary">Saw this breakdown from Theo (t3.gg) on X showing the latest DeepSWE leaderboard stats for the new GLM-5.2 open-weight model.The good news: it&#39;s officially surpassing GPT-5.4 and the entire Gemini lineup in raw coding capability. Seeing an open-weight model punch that high is incredibly dope.The catch? It is not cheap to run.According to the chart:GPT-5.5 (medium) and Claude Opus 4.8 (high) are...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">6h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1ubl0df/gemma_4_qat_seems_to_respond_significantly_better/" target="_blank" rel="noopener">Gemma 4 QAT seems to respond significantly better to KV cache quantization</a>
-    </h3>
-
-    
-    <p class="card-summary">Results from KL Divergence on wikitext with 16k context I know some users, including myself, were disappointed with Gemma 4&#39;s sensitivity to KV cache quantization. Seems like Q8_0 on QAT models might be back on the menu. KLD measures divergence from the base (in this case, full 16-bit KV cache). 99.9% KLD is a pretty good metric for measuring how much KV quantization affects model performance...</p>
+    <p class="card-summary">Hey folks Hope you are doing well I started HobbyLM as an side project last month Initially I wrote an Agent harness using Claude SDK which takes notes on various LLM architecture does ablation studies to find optimised or well fit architecture for this model training then I pretrained HobbyLM architecture with 40B tokens from fineweb and post trained to extend its context window then used SIGLIP...</p>
     
 
     
@@ -367,8 +203,8 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>Last updated: June 21, 2026 at 15:05 UTC</p>
-            <p>23 articles from 8 sources</p>
+            <p>Last updated: June 21, 2026 at 19:25 UTC</p>
+            <p>11 articles from 6 sources</p>
             <p>Daily Signal Feed &mdash; AI, Web3 &amp; Emerging Tech Aggregator</p>
         </div>
     </footer>
