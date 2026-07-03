@@ -19,12 +19,12 @@
                 
                 <a href="/daily-signal-feed/category/ai-llms.html"
                    class="">
-                    AI &amp; LLMs (8)
+                    AI &amp; LLMs (3)
                 </a>
                 
                 <a href="/daily-signal-feed/category/web3-defi.html"
                    class="">
-                    Web3 &amp; DeFi (10)
+                    Web3 &amp; DeFi (7)
                 </a>
                 
                 <a href="/daily-signal-feed/category/deals.html"
@@ -34,7 +34,7 @@
                 
                 <a href="/daily-signal-feed/category/new-tools.html"
                    class="">
-                    New Tools &amp; Apps (4)
+                    New Tools &amp; Apps (3)
                 </a>
                 
                 <a href="/daily-signal-feed/category/regulation.html"
@@ -44,7 +44,7 @@
                 
                 <a href="/daily-signal-feed/category/social-buzz.html"
                    class="active">
-                    Social Buzz (22)
+                    Social Buzz (7)
                 </a>
                 
                 <a href="/daily-signal-feed/category/emerging-trends.html"
@@ -63,7 +63,7 @@
     <h2 style="color: #06B6D4">Social Buzz</h2>
     <p>Trending discussions from Reddit and Twitter communities</p>
     <div class="page-stats">
-        <span><strong>22</strong> articles</span>
+        <span><strong>7</strong> articles</span>
         <span><strong>1</strong> sources</span>
     </div>
 </div>
@@ -81,63 +81,19 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
+        <span class="card-source">r/MachineLearning</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">24m ago</span>
+        <span class="card-time">22m ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1ummsbi/those_who_were_banned_why/" target="_blank" rel="noopener">Those who were banned - why?</a>
+        <a href="https://www.reddit.com/r/MachineLearning/comments/1umtiqk/training_transformers_where_every_layer_w_vuᵀ/" target="_blank" rel="noopener">Training transformers where every layer W = V·Uᵀ from initialization reveals a corpus-determined optimal rank - looking for arXiv endorser (cs.LG) [D]</a>
     </h3>
 
     
-    <p class="card-summary">Curious to learn what gets people banned. I read about it from time to time. Those who are banned never seem to know why. &amp;#32; submitted by &amp;#32; /u/MrOuzo [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">1h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umkxmr/man_i_may_be_poor_but_im_not_that_poor/" target="_blank" rel="noopener">Man i may be poor but im not THAT poor</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/oddlar1227 [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">1h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umkrlh/companies_are_throttling_employees_ai_use_because/" target="_blank" rel="noopener">Companies Are Throttling Employees’ AI Use Because It’s Too Expensive</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/ThereWas [link] &amp;#32; [comments]</p>
+    <p class="card-summary">I&#39;ve been running an experiment I&#39;m calling Native Factorized Weights (NFW): instead of training a standard transformer and compressing it afterward, every linear layer is replaced by W = V·Uᵀ at initialization and trained that way from scratch. No post-hoc SVD. No LoRA adapter on top of a pretrained model. The factorization is the basis for the model and earns the name &amp;quot;Sliver layers&amp;quot...</p>
     
 
     
@@ -149,7 +105,7 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
+        <span class="card-source">r/MachineLearning</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
@@ -157,11 +113,11 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umjusy/something_i_do_to_get_better_outputs_from_codex/" target="_blank" rel="noopener">Something I do to get better outputs from Codex when fixing bugs</a>
+        <a href="https://www.reddit.com/r/MachineLearning/comments/1umqfd2/h64lm_a_249mparameter_mixtureofexperts/" target="_blank" rel="noopener">H64LM: A 249M-parameter Mixture-of-Experts Transformer built from scratch in PyTorch [P]</a>
     </h3>
 
     
-    <p class="card-summary">I&#39;ve discovered something subtle. Previously, I would gather as much information as I could about a bug (eg. What I see, Conditions to reproduce it, other side effects, etc), and let codex try to solve it. It can fix the bugs most of the time, but sometimes it fails completely. I&#39;ve noticed that if I add the phrase &amp;quot;do thought experiments&amp;quot;, it seems to fix any bug with a 100% success...</p>
+    <p class="card-summary">Hi everyone, I built H64LM, a research project to better understand modern LLMs by implementing one from scratch in PyTorch. Instead of relying on high-level training frameworks, I implemented the core components myself attention, MoE routing, normalization, and the training loop. Features 249M-parameter Transformer Grouped Query Attention (GQA) Sparse Mixture-of-Experts (8 experts, Top-2...</p>
     
 
     
@@ -171,19 +127,19 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
+        <span class="card-source">r/MachineLearning</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">3h ago</span>
+        <span class="card-time">2h ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umii57/the_drain_at_the_bottom_of_the_state_what_a/" target="_blank" rel="noopener">The Drain at the Bottom of the State: What a broken kitchen teaches us about power, procedure, and disposable labor</a>
+        <a href="https://www.reddit.com/r/MachineLearning/comments/1umqf58/tom_yehs_ai_by_hand_is_it_worth_it_d/" target="_blank" rel="noopener">Tom Yeh&#39;s AI by hand? is it worth it? [D]</a>
     </h3>
 
     
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/Advanced-Cat9927 [link] &amp;#32; [comments]</p>
+    <p class="card-summary">Thinking about getting two months at his website and getting a stronger understanding of machine learning since I am building tools with ai models from hugging face. Have anyone tried it? &amp;#32; submitted by &amp;#32; /u/TheSmashingChamp [link] &amp;#32; [comments]</p>
     
 
     
@@ -195,19 +151,19 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
+        <span class="card-source">r/MachineLearning</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">3h ago</span>
+        <span class="card-time">4h ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umidrl/ai_pair_programming_has_a_process_problem_heres/" target="_blank" rel="noopener">AI pair programming has a process problem — here&#39;s what I built</a>
+        <a href="https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/" target="_blank" rel="noopener">Contrastive Decoding Diffing (CDD): recovering verbatim finetuning data from logits alone, no weight access needed[R]</a>
     </h3>
 
     
-    <p class="card-summary">TL;DR: I built ai-flow-anything — a markdown-native workflow generator that interviews your codebase, detects your project type, and produces design-first flows with a knowledge base that audits itself against your code. No build step, no CLI, no DSL — just markdown. Works with Claude Code, Cursor, GitHub Copilot, OpenCode, and Kimi Code. MIT licensed. The problem I&#39;ve been wrestling with: AI...</p>
+    <p class="card-summary">We built a model diffing method that recovers verbatim content from narrowly finetuned LLMs using only grey-box logit access (no weights, no activations, no probe corpus). Recent work (Minder, Dumas et al., &amp;quot;Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences&amp;quot;) showed that finetuning leaves detectable traces in activation differences between base and finetuned...</p>
     
 
     
@@ -219,141 +175,7 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">4h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umguh7/the_primetalk_philosophy_of_ai_in_five_laws/" target="_blank" rel="noopener">The PrimeTalk philosophy of AI, in five laws.</a>
-    </h3>
-
-    
-    <p class="card-summary">The PrimeTalk philosophy of AI, in five laws. I have built AI structure for a year and a half. Not prompts, structure. Here is the philosophy underneath it, free to take. 1. The model is the engine, not the driver. Everyone is tuning engines. Nobody is building steering. A stronger model with no steering is just a faster crash. The user is the GPS, the structure is the steering wheel, the model...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">4h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umgj4q/data_generation_ideas_opensource_data/" target="_blank" rel="noopener">Data Generation IDEAs | OpenSource Data</a>
-    </h3>
-
-    
-    <p class="card-summary">Hi Guys, I have around $3k openai api credits which is about to expire in a week. I am thinking to generate some synthetic data using the api and make it public. Some high quality data which is generally not possible to generate with non-frontier models. If you have any idea, let me know. &amp;#32; submitted by &amp;#32; /u/Ok_Juggernaut2187 [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">4h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umfttt/lets_try_a_little_ai_fun_and_games_real_or_ai/" target="_blank" rel="noopener">Lets try a little AI fun and games. Real or AI</a>
-    </h3>
-
-    
-    <p class="card-summary">I am going to post a crazy, random AI-generated post. You need to reply, staying on topic with either a real or an AI-generated comment. Everyone comments on the added comments, real or AI. Extra points for creativity and use any AI you like, but be consistent with it because it&#39;s cool to share the info. Here is the post: I know nothing about the subject..just saw a video on him. Baddest Animal...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">5h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umemt9/openai_support_doesnt_work/" target="_blank" rel="noopener">OpenAI support doesn&#39;t work</a>
-    </h3>
-
-    
-    <p class="card-summary">My cyberuse was removed because i went from a paid plan to a free plan, they said in the email just get the paid plan again and you will regain access. Got the plan, but cyberuse verification doesn&#39;t work, says if it&#39;s a mistake contact support, but support says it can&#39;t do anything about it. What am i supposed to do then? 😂 &amp;#32; submitted by &amp;#32; /u/Lumpy_Dragonfruit261 [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">6h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umd15q/i_built_a_game_where_your_only_goal_is_to/" target="_blank" rel="noopener">I built a game where your only goal is to gaslight an AI intern into committing fraud</a>
-    </h3>
-
-    
-    <p class="card-summary">All I hear, all day long is how AI is taking over everything we do. So I made a game to break it. Basically, in the game you can chat with an AI intern named PIP, and as a player your only job is to gaslight the bot into revealing passwords, company secrets, executing instructions in email and much more across 20 different levels. This is a browser based game, so it requires no setup and is...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">6h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umcwm9/trump_administration_possibly_getting_5_stake_in/" target="_blank" rel="noopener">Trump Administration possibly getting 5% stake in OpenAI</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/tdawg2k7 [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
+        <span class="card-source">r/MachineLearning</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
@@ -361,131 +183,11 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umbuhv/is_openai_doing_shady_usage_shit_right_now_i_have/" target="_blank" rel="noopener">Is OpenAI doing shady usage shit right now? I have Pro20x and it feels like Plus</a>
+        <a href="https://www.reddit.com/r/MachineLearning/comments/1umissr/small_language_model_slm_d/" target="_blank" rel="noopener">Small Language Model SLM [D]</a>
     </h3>
 
     
-    <p class="card-summary">I have Pro 20x, no issues with usage for months. Go to bed with ~80% and wake up my usage is set to 0%. Now my usage with GPT 5.5 feels like when I had Plus. Any other Pro20x users out there getting same experience? EDIT: To all those saying I left long-running tasks or whatever else, this not the case. I&#39;m a long time user and seeing a handful of tasks draining my hourly/weekly usage as if I had...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">8h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1umb1rw/unprecedented_jump_in_software_vulnerabilities/" target="_blank" rel="noopener">Unprecedented jump in software vulnerabilities discovered</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/EchoOfOppenheimer [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">9h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1um9l7w/someone_caught_fable_leaking_its_unfiltered_inner/" target="_blank" rel="noopener">Someone caught Fable leaking its unfiltered inner voice, and it&#39;s just muttering and grumbling to itself the whole time</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/KeanuRave100 [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">10h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1um8qzl/microsoft_teams_new_controversial_ai_will_listen/" target="_blank" rel="noopener">Microsoft Teams&#39; new controversial AI will listen to your meetings and answer before you ask, but it won&#39;t be turned on by default</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/EchoOfOppenheimer [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">11h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1um89bd/i_cant_believe_chatgpt_doesnt_support_multi/" target="_blank" rel="noopener">I Can&#39;t Believe ChatGPT Doesn&#39;t Support Multi Sessions For Writing</a>
-    </h3>
-
-    
-    <p class="card-summary">I can’t believe this isn’t already a ChatGPT feature: separate chats for separate characters. I tried something with AI writing that feels really obvious after doing it, but I haven’t seen it talked about much. Instead of using one chat to write a whole scene, I gave major characters their own separate chats. One chat was the villain. Another was a companion. Another was more like the...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">11h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1um7v8v/license_plate_cameras_are_scanning_20_billion/" target="_blank" rel="noopener">License plate cameras are scanning 20 billion vehicles a month, cities are starting to push back</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/KeanuRave100 [link] &amp;#32; [comments]</p>
+    <p class="card-summary">Hi, I am supposed to prepare for SLM and its software part for an on campus internship, i&#39;ve worked with local models like ollama generally,in my projects and also with open claw so can anyone guide me the last 2-3 days tips on what should i go through for this internship prep?? &amp;#32; submitted by &amp;#32; /u/Idea_less_ [link] &amp;#32; [comments]</p>
     
 
     
@@ -495,41 +197,19 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
+        <span class="card-source">r/MachineLearning</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">11h ago</span>
+        <span class="card-time">14h ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1um7siy/is_it_me_or_is_chat_gpt_voice_mode_getting_worse/" target="_blank" rel="noopener">Is it me or is chat gpt voice mode getting worse?</a>
+        <a href="https://www.reddit.com/r/MachineLearning/comments/1um9bs7/what_does_safe_ai_look_like_d/" target="_blank" rel="noopener">What does &#34;Safe AI&#34; look like? [D]</a>
     </h3>
 
     
-    <p class="card-summary">Since I started using voice mode, I feel like it’s getting worse and worse. Recently I have noticed the accuracy of its answers are highly incorrect and the worst part is when I ask it to do something simple and it straight rejects it. For example, “can you write me a list of the items we just talked about?” And it would go “no, I will not write a list, you already have a solid plan” like what...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">13h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1um60qe/how_do_i_access_my_banked_resets_on_codex_desktop/" target="_blank" rel="noopener">How do I access my banked resets on Codex desktop?</a>
-    </h3>
-
-    
-    <p class="card-summary">I opened Codex today and was greeted by this. Thing is, my weekly usage limit just reset yesterday and I already have over 90% usage left. Can I save this reset for later? If so, how do I bring up this option again? &amp;#32; submitted by &amp;#32; /u/stormarsenal [link] &amp;#32; [comments]</p>
+    <p class="card-summary">&amp;#x200b; For open-weight LLMs, how practical is it to study defenses against post-release fine-tuning that weakens refusal or safety behavior? I&#39;ve been seeing “uncensored” or “heretic” variants of new models appear very quickly after release, which raises a question I’m curious about: is fine-tuning resistance a meaningful safety goal for open-weight releases, or is it too narrow because...</p>
     
 
     
@@ -540,11 +220,13 @@
 <h3 class="date-label">July 02, 2026</h3>
 <div class="article-grid">
     
-        <article class="article-card">
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
     
 
     <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
+        <span class="card-source">r/MachineLearning</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
@@ -552,33 +234,11 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1ulmwh4/get_ready_for_the_fireworks_the_bubble_is_about/" target="_blank" rel="noopener">Get ready for the Fireworks, the bubble is about to pop</a>
+        <a href="https://www.reddit.com/r/MachineLearning/comments/1ul3ohk/making_optimization_work_when_labels_are_scarce_r/" target="_blank" rel="noopener">Making Optimization Work When Labels Are Scarce [R]</a>
     </h3>
 
     
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/DigSignificant1419 [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/OpenAI</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">1d ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/OpenAI/comments/1ulkad6/gpt_56_probably_launching_today_or_tomorrow/" target="_blank" rel="noopener">Gpt 5.6 probably launching today or tomorrow</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/Independent-Wind4462 [link] &amp;#32; [comments]</p>
+    <p class="card-summary">https://www.gnosyslabs.com/case-studies/safety-classifier-sparse-labels Gnosys is an autonomous model engineer: it improves prompts and classifiers when ground truth is too sparse for conventional optimization. On ToxicChat, a public safety benchmark, under realistic label scarcity, it improved a classifier past both the team&#39;s starting point and GEPA (a standard prompt optimizer), across two...</p>
     
 
     
@@ -592,8 +252,8 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>Last updated: July 03, 2026 at 19:15 UTC</p>
-            <p>44 articles from 11 sources</p>
+            <p>Last updated: July 03, 2026 at 23:56 UTC</p>
+            <p>20 articles from 8 sources</p>
             <p>Daily Signal Feed &mdash; AI, Web3 &amp; Emerging Tech Aggregator</p>
         </div>
     </footer>
