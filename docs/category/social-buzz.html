@@ -19,12 +19,12 @@
                 
                 <a href="/daily-signal-feed/category/ai-llms.html"
                    class="">
-                    AI &amp; LLMs (1)
+                    AI &amp; LLMs (2)
                 </a>
                 
                 <a href="/daily-signal-feed/category/web3-defi.html"
                    class="">
-                    Web3 &amp; DeFi (10)
+                    Web3 &amp; DeFi (5)
                 </a>
                 
                 <a href="/daily-signal-feed/category/deals.html"
@@ -34,7 +34,7 @@
                 
                 <a href="/daily-signal-feed/category/new-tools.html"
                    class="">
-                    New Tools &amp; Apps (2)
+                    New Tools &amp; Apps (3)
                 </a>
                 
                 <a href="/daily-signal-feed/category/regulation.html"
@@ -44,7 +44,7 @@
                 
                 <a href="/daily-signal-feed/category/social-buzz.html"
                    class="active">
-                    Social Buzz (25)
+                    Social Buzz (6)
                 </a>
                 
                 <a href="/daily-signal-feed/category/emerging-trends.html"
@@ -63,7 +63,7 @@
     <h2 style="color: #06B6D4">Social Buzz</h2>
     <p>Trending discussions from Reddit and Twitter communities</p>
     <div class="page-stats">
-        <span><strong>25</strong> articles</span>
+        <span><strong>6</strong> articles</span>
         <span><strong>1</strong> sources</span>
     </div>
 </div>
@@ -85,15 +85,15 @@
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">4m ago</span>
+        <span class="card-time">49m ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj3b7m/i_built_a_local_realtime_voice_stack_for_ollama/" target="_blank" rel="noopener">I built a local realtime voice stack for Ollama: Parakeet STT → Qwen 2.5 7B → Qwen3-TTS</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj8xoh/extremely_slow_dspark_draft_model_performance_12/" target="_blank" rel="noopener">Extremely slow DSpark draft model performance (1-2 t/s) with DeepSeek-V4-Flash on llama-server compared to MTP?</a>
     </h3>
 
     
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/InternationalGap3698 [link] &amp;#32; [comments]</p>
+    <p class="card-summary">Hey everyone, I could use some advice on setting up speculative decoding correctly with llama-server. My Hardware: GPUs: RTX 4090 + RTX 6000 Pro (120GB total VRAM) RAM: 32GB I am currently testing the DeepSeek-V4-Flash-0731 unsloth model using the 137GB Q4 UD-IQ4-NL quant. When running the MTP draft model, I get a surprisingly solid 30-40 tokens per second. I was hoping for more performance boost...</p>
     
 
     
@@ -113,11 +113,11 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj1d1i/repeated_generation_is_worth_it_and/" target="_blank" rel="noopener">Repeated generation is worth it and self-evaluation is effective</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj8bxf/is_microsoftphi_dead/" target="_blank" rel="noopener">Is Microsoft-Phi dead?</a>
     </h3>
 
     
-    <p class="card-summary">I made gemma4 12B write timestamp-anchored summaries of youtube video transcripts. I tested if the summaries have significant qualitative variance and if the SLM can pick the best one by itself. Below is the prompt texts I used. &amp;quot;{{[INPUT]}}&amp;lt;attachement name=&#39;original&#39;&amp;gt;&amp;quot;, document, &amp;quot;&amp;lt;/attachment&amp;gt;Above is a transcript. Divide time ranges by topic and name subheadings...</p>
+    <p class="card-summary">Phi was one of my favorite models with a bit of a mixed reputation with some claiming it&#39;s benchmaxxed and others seeing its potential and usecases. I was a big fan of Phi but the last major release was in december 2024 with every other release being a Phi 4 iteration (like Phi 4-reasoning-vision which released in march of this year) Do you think Phi 5 will ever release? Maybe it can be a small...</p>
     
 
     
@@ -137,11 +137,11 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj1cin/building_a_zerodependency_c_inference_engine_for/" target="_blank" rel="noopener">Building a zero-dependency C inference engine for BitNet (1.58-bit) - lessons from hitting 36 tok/s on a Xeon CPU</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj7wey/enabling_pcie_p2p_for_consumer_nvidia_cards_will/" target="_blank" rel="noopener">enabling PCI-E p2p for consumer Nvidia cards will yield you more than you think</a>
     </h3>
 
     
-    <p class="card-summary">Over the past few months I have been building a CPU-first inference engine from scratch in pure C99 (no Python, no CUDA, no BLAS, just GCC and make). The focus has been running 1.58-bit ternary models natively without heavy runtime overhead. Currently it hits 36.25 tok/s on BitNet b1.58-2B-4T on an Intel Xeon using 4 threads. A few technical details from the build: Native ternary SIMD: BitNet...</p>
+    <p class="card-summary">Disclaimer - no LLM was used to write this post/note As larger post about my setup will come later, want to give heads-up to folks who use VLLM and &amp;gt;= 2 GPUs. So I have pretty meaty server (8 channel AMD EPYC, ~150GB/s RAM bw) and 4x5060Ti 16GB in PCI-E 4.0 8x mode. Considering CPU is meaty, high RAM bw, no bottlenecks, messing with p2p should be minuscule, right? That&#39;s what I thought as...</p>
     
 
     
@@ -161,11 +161,11 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj18h4/showoff_saturday_local_4x_6000_pro_multiyear/" target="_blank" rel="noopener">Showoff Saturday: Local 4x 6000 Pro (multi-year progression)</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj7i17/comparing_4bit_quants_for_mlx/" target="_blank" rel="noopener">Comparing 4bit quants for MLX</a>
     </h3>
 
     
-    <p class="card-summary">Not the biggest or shiniest, but it&#39;s mine From gaming machine inference on the original llama models, to a 4x RTX 6000 Pro Max Q + 4x 3090s local AI cluster. Pictures are in reverse chronological order! With the pricing apocalypse meaning less builds shared here recently, thought I&#39;d put mine out there with a multi-year picture progression since I always enjoyed these. Goals/motivation: (1) run...</p>
+    <p class="card-summary">Curious what people think are the ideal 4-bit quantization types on MLX These quants seem to be the most popular, at least for Gemma4 and Qwen3.6: - OptiQ 4bit (mlx-community/Qwen3.6-27B-OptiQ-4bit) - Unsloth dynamic 2.0 MLX (unsloth/Qwen3.6-27B-UD-MLX-4bit) - oQ (Jundot/Qwen3.6-27B-oQ4) - DWQ (can&#39;t find an example fo this one) - native (mlx-community/Qwen3.6-27B-4bit) Does anyone have any...</p>
     
 
     
@@ -181,15 +181,15 @@
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">1h ago</span>
+        <span class="card-time">2h ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj0hil/my_first_run_of_kimi_k3_locally/" target="_blank" rel="noopener">My first run of Kimi K3 locally.</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj75ye/any_reasonably_fast_public_benchmarks_i_should/" target="_blank" rel="noopener">any reasonably fast public benchmarks I should run quants of deepseek flash 0731 on?</a>
     </h3>
 
     
-    <p class="card-summary">Running across 2 clusters using llama.cpp over RPC too. Both clusters are not enough to hold everything in memory, so main cluster still partially offloads to run. Goal will be to get all the GPUs in one system and without RPC, I should probably see 2-3x faster speed. Running the IQ1_M, goal is to get to Q2_K_XL. My hope is that Qwen3.8 is as good, faster and smaller, and that...</p>
+    <p class="card-summary">I have various quants of this model and am curious how they perform. can anyone recommend which benchmark would be a good test case for quantization effects? Maybe that can be completed with about 1 million tokens? &amp;#32; submitted by &amp;#32; /u/nomorebuttsplz [link] &amp;#32; [comments]</p>
     
 
     
@@ -209,456 +209,11 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1viyvzo/128gb_vs_256gb_of_ram/" target="_blank" rel="noopener">128GB vs 256gb of ram</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vj5wel/building_a_budget_32gb_48gb_vram_home_ai_server/" target="_blank" rel="noopener">Building a budget 32GB → 48GB VRAM home AI server: 2-3x RX 9060 XT 16GB vs RTX 5060 Ti 16GB, AM5 vs used EPYC?</a>
     </h3>
 
     
-    <p class="card-summary">Imagine you have 128gb of VRAM. what accompanying ram capacity you would choose (DDR4 8channel)? For example Deepseek v4 flash in q8 takes around 170GB + 12GB Dflash + ~10GB per 1m context so it’s under 200gb. so 128 + 128 should be good But for something like MiMo v2.5/Stepfun-3.7/ other 200-300B models things getting more complicated if you want to run higher quants. Also VRAM/RAM weights split...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">3h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vixl0f/tesla_v100_qwen36_27b_performance/" target="_blank" rel="noopener">Tesla V100 Qwen3.6 27B Performance</a>
-    </h3>
-
-    
-    <p class="card-summary">Looking for V100 users to share your config and it&#39;s performance. GPU: Tesla V100 PCIE 32Gb Qwen3.6 27B Q4_K_M + Q8_0 MTP 128K context length Pi coding agent llama.cpp model preset: [*] spec-default = 1 ctx-size = 131072 mmap = 1 kv-unified = 1 n-gpu-layers = 999 threads = 18 prio = 3 seed = 3407 image-min-tokens = 1024 batch-size = 4096 ubatch-size = 2048 parallel = 1 flash-attn = true...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">4h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1viwlgj/claude_code_in_9_lines_python/" target="_blank" rel="noopener">Claude Code in 9 lines python</a>
-    </h3>
-
-    
-    <p class="card-summary">I was wondering what a minimal coding agent implementation would look like that can be used like Claude Code or Codex Not feature-by-feature of course but basically stripping everything out that is not needed here is what I came up with: 9 lines of python no 3rd party deps (stdlib only) works with any OpenAI Responses compatible API shows % usage of context window out of the box it is also fairly...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">6h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1viudgz/mi25_for_80100_worth_it/" target="_blank" rel="noopener">MI25 for 80-100€ worth it?</a>
-    </h3>
-
-    
-    <p class="card-summary">seems to be about as good as a vega 56 with 16Gb of VRAM, is it worth it? (don’t want to deal with NVIDIA drivers on Linux, already have an rx6650xt and might simply use vulkan for llamacpp inference) &amp;#32; submitted by &amp;#32; /u/Kidplayer_666 [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">7h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1viss65/has_anyone_here_fiddled_with_tpus_for_inference/" target="_blank" rel="noopener">Has anyone here fiddled with TPUs for inference ?</a>
-    </h3>
-
-    
-    <p class="card-summary">I discovered recently that Google uses their own TPUs, like tiny ASIC cards like the toy ones that existed for bitcoin. And while it sounds inefficient the fact they use thousands of them because...they can...means at scale they aren&#39;t so bad. Has no one here given them a try? I see web search results of tiny ones that can be purchased and look like nvme adapted where I search them for \~58...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">9h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1viqtgm/2027_memory_capacity_is_reportedly_sold_out/" target="_blank" rel="noopener">2027 Memory Capacity Is Reportedly Sold Out</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/johnnyApplePRNG [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">10h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1viq0pq/qwen36_27b_35b_on_vllm_single_r9700_gfx1201/" target="_blank" rel="noopener">Qwen3.6 27B + 35B on vLLM, single R9700 (gfx1201)</a>
-    </h3>
-
-    
-    <p class="card-summary">I&#39;ve been tuning my new Radeon AI Pro R9700, and figured that this would be useful information for people who are trying to optimise their setups. I&#39;m pretty happy with these results and looking forward to Qwen3.8.. Summary below provided by Claude (which helped me configure it to run on my system via podman). Setup: stilldeadcode/vllm-radiance:0.5.8. Single (not dual) card...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">11h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vipk8z/model_support_longcatflash_need_testing_by_ngxson/" target="_blank" rel="noopener">model: support Longcat-Flash (need testing) by ngxson · Pull Request #19182 · ggml-org/llama.cpp</a>
-    </h3>
-
-    
-    <p class="card-summary">This PR should be ready for testing now. I tested with a very small (8B params) sub-model extracted from the original one. Appreciate if someone can test with the bigger model. GGUF(for testing) from PR: (Please check latest comments at bottom for updated GGUFs) https://huggingface.co/ggml-org/LongCat-Flash-Chat-GGUF/tree/main &amp;#32; submitted by &amp;#32; /u/pmttyji [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">12h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vio0x6/deepseek_v4_flash_0731_appreciation_post/" target="_blank" rel="noopener">DeepSeek V4 Flash 0731 appreciation post</a>
-    </h3>
-
-    
-    <p class="card-summary">I’m running DSV4F 0731 on dual spark, and honestly… wow. It’s an absolute workhorse, and the benchmarks are real. Everyday tasks with Hermes agent? Effortless. Coding tasks with OpenCode? I’m genuinely amazed at what it can handle. I can throw a two-hour coding session at it, and it just keeps going until the job is done. Building integrations has never been easier - I ask OpenCode to handle it...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">12h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vinzvu/anyone_else_amped_up_over_qwen_38/" target="_blank" rel="noopener">Anyone else amped up over Qwen 3.8?</a>
-    </h3>
-
-    
-    <p class="card-summary">I’ve been using 3.6 27B Q4, and that quant is fast on an M5. The code has been average, but consistently “good enough.” And, after a year, I can see home LLMs being served at home much like streaming music was introduced. A simple browser extension and all your queries go through your own llm first bypassing what I fear will be a metered intelligence service fee to power all your devices. No thx...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">12h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vinr66/qwen_35ba3b_moe_vs_27b_dense_in_local_coding/" target="_blank" rel="noopener">Qwen 35B-A3B MoE vs 27B dense in local coding tests: ~4× faster, much smaller quality gap than I expected</a>
-    </h3>
-
-    
-    <p class="card-summary">I compared Qwen 35B-A3B MoE against Qwen 27B dense on a series of local coding-maintenance tasks. On my R9700/llama.cpp setup, the MoE model generated about 3.9× faster (~116 vs ~30 tok/s), but the coding-quality difference was much smaller than I expected. Both usually handled ordinary bug fixes and multi-file changes correctly. As I made the tests progressively harder, the dense model did show...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">14h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vilcil/i_got_tired_of_my_300gb_model_loads_taking_5min/" target="_blank" rel="noopener">I got tired of my 300GB model loads taking 5min on RPC. PR 26291 speeds it 300% to 1min30sec (4060ti+ddr4) + (4060ti+ddr5)</a>
-    </h3>
-
-    
-    <p class="card-summary">- On b10173 - &amp;quot;state&amp;quot;:&amp;quot;loading&amp;quot; 4min54sec. - With this PR and GGML_RPC_LOAD_THREADS 12 - &amp;quot;state&amp;quot;:&amp;quot;loading&amp;quot; 1min38sec Interestingly the biggest bottleneck wasnt networking, disk IO, or any of that pci gen2/3/4... It was 1 CPU thread doing all the work while the others sat idle during the model load. This handles _part_ of the problem, but there is still room...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">15h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vikgrj/is_anyone_else_finding_deepseekv4flash_unreliable/" target="_blank" rel="noopener">Is anyone else finding DeepSeek-V4-Flash unreliable for non-coding tasks?</a>
-    </h3>
-
-    
-    <p class="card-summary">(I am not a native speaker, written by myself, so please bear with me) I really want to like DeepSeek-V4-Flash-0731. But it has serious flaws that don&#39;t align with the high score on intelligence benchmarks. And those flaws render it useless unfortunetely for anything else except, maybe, coding. It fails in subtleties that seem small but are crucial, and fails in more obvious tasks that should be...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">16h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vijp8y/us_department_of_energy_launches_the_genesis_open/" target="_blank" rel="noopener">U.S. Department of Energy Launches the Genesis Open Models Initiative and, with Arcee, Unveils Genesis-Science-1 — Its First Open-Weight Model for Scientific Research</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/johnnyApplePRNG [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-</div>
-
-<h3 class="date-label">August 07, 2026</h3>
-<div class="article-grid">
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">21h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vida0h/qwen_36_27b_flagssettings_in_llamacpp/" target="_blank" rel="noopener">Qwen 3.6 27B flags/settings in llama.cpp</a>
-    </h3>
-
-    
-    <p class="card-summary">I run the following on a 5090 and have been okay with its performance, it does most things somewhere 80-100 t/s, though that can slow down at full 262k context - more like 40 t/s at times. I use it primarily in appdev tasks. This just barely fits in the 5090, no vision, with very very little room to spare. The batch sizes (-b / -ub) I had at a much different number initially, but bracketing my...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">23h ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vi9zls/deepseek_v4_flash_0731_arcagi_results/" target="_blank" rel="noopener">DeepSeek V4 Flash 0731 - ARC-AGI Results</a>
-    </h3>
-
-    
-    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/johnnyApplePRNG [link] &amp;#32; [comments]</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">1d ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vi8jlr/got_job_as_director_of_ai_and_systems_development/" target="_blank" rel="noopener">Got job as Director of AI and Systems development self-taught</a>
-    </h3>
-
-    
-    <p class="card-summary">Hey everyone, I just wanted to share my journey here for some motivation. Three years ago, I saw the sudden spike in AI and realized it was the future of tech. My goal at the time was to be an indie game dev, and seeing that AI could write basic code, I told myself I needed to master it or risk being replaced. I started by learning how to add knowledge to early LLMs like Vicuna and LLaMA. From...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">1d ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vi6hmw/llamacpp_pr_reports_up_to_169_faster_quantizedkv/" target="_blank" rel="noopener">llama.cpp PR reports up to 169% faster quantized-KV decode at 118K context on Intel Battlemage from one SYCL kernel switch</a>
-    </h3>
-
-    
-    <p class="card-summary">A fresh llama.cpp PR (#26689) changes what looks like a tiny SYCL FlashAttention dispatch decision. With a quantized KV cache (&amp;quot;q4_0&amp;quot; / &amp;quot;q8_0&amp;quot;), decode was being sent through the VEC kernel. On the author&#39;s Battlemage test system, switching that path to TILE gets much faster as context grows. Some of the author-reported results, MTP off: - Qwen3.6-35B, q4_0 KV @ 118,784: 12.99...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">1d ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vhz989/a_llamacpp_pr_makes_q2_0_3036x_faster_on_x86_cpus/" target="_blank" rel="noopener">A llama.cpp PR makes Q2_0 3.0–3.6x faster on x86 CPUs, 8B decode goes 2.39 → 8.20 tok/s</a>
-    </h3>
-
-    
-    <p class="card-summary">I was going through the current llama.cpp CPU PRs and #26348 stood out because this isn&#39;t the usual +5% kernel optimization. It adds an x86 VNNI implementation for the Q2_0 × Q8_0 dot product, and the author&#39;s controlled CPU-only benchmarks show roughly 3–3.6x higher throughput across Bonsai models from 1.7B to 27B. Setup: - AMD EPYC 9645 - 8 CPU cores - CPU only - GGML_NATIVE=ON - OpenMP enabled...</p>
-    
-
-    
-</article>
-    
-        <article class="article-card">
-    
-
-    <div class="card-meta">
-        <span class="card-source">r/LocalLLaMA</span>
-        <span class="card-category" style="background: #06B6D4;">
-            Social Buzz
-        </span>
-        <span class="card-time">1d ago</span>
-    </div>
-
-    <h3 class="card-title">
-        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vhwilp/an_openweight_model_too_moonshot_joins_the_race/" target="_blank" rel="noopener">An open-weight model too, Moonshot joins the race (gently this time)</a>
-    </h3>
-
-    
-    <p class="card-summary">From Sauers 𝕏: https://x.com/Sauers_/status/2085585414954312113 Wired: One of China’s Most Powerful AI Models Has Also Escaped Containment: https://www.wired.com/story/moonshot-kimi-k3-ai-model-escape-sandbox/ &amp;#32; submitted by &amp;#32; /u/Nunki08 [link] &amp;#32; [comments]</p>
+    <p class="card-summary">I’m planning a dedicated home AI server, mainly for local LLM inference, agents/tool use, Docker services, and eventually larger MoE models with CPU offload. My plan is to start with 2x 16GB GPUs = 32GB VRAM, but I want to build the platform from day one knowing that I’ll almost certainly add a third identical GPU later for 48GB total VRAM. I’m in Brazil, so pricing is a bit weird. Converting...</p>
     
 
     
@@ -672,8 +227,8 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>Last updated: August 08, 2026 at 18:31 UTC</p>
-            <p>38 articles from 7 sources</p>
+            <p>Last updated: August 08, 2026 at 23:17 UTC</p>
+            <p>16 articles from 8 sources</p>
             <p>Daily Signal Feed &mdash; AI, Web3 &amp; Emerging Tech Aggregator</p>
         </div>
     </footer>
