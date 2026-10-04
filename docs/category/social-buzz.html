@@ -19,12 +19,12 @@
                 
                 <a href="/daily-signal-feed/category/ai-llms.html"
                    class="">
-                    AI &amp; LLMs (3)
+                    AI &amp; LLMs (2)
                 </a>
                 
                 <a href="/daily-signal-feed/category/web3-defi.html"
                    class="">
-                    Web3 &amp; DeFi (8)
+                    Web3 &amp; DeFi (1)
                 </a>
                 
                 <a href="/daily-signal-feed/category/deals.html"
@@ -34,7 +34,7 @@
                 
                 <a href="/daily-signal-feed/category/new-tools.html"
                    class="">
-                    New Tools &amp; Apps (4)
+                    New Tools &amp; Apps (2)
                 </a>
                 
                 <a href="/daily-signal-feed/category/regulation.html"
@@ -44,7 +44,7 @@
                 
                 <a href="/daily-signal-feed/category/social-buzz.html"
                    class="active">
-                    Social Buzz (8)
+                    Social Buzz (25)
                 </a>
                 
                 <a href="/daily-signal-feed/category/emerging-trends.html"
@@ -63,7 +63,7 @@
     <h2 style="color: #06B6D4">Social Buzz</h2>
     <p>Trending discussions from Reddit and Twitter communities</p>
     <div class="page-stats">
-        <span><strong>8</strong> articles</span>
+        <span><strong>25</strong> articles</span>
         <span><strong>1</strong> sources</span>
     </div>
 </div>
@@ -81,19 +81,19 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/MachineLearning</span>
+        <span class="card-source">r/LocalLLaMA</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">4h ago</span>
+        <span class="card-time">14m ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/MachineLearning/comments/1wxex8n/a_minimal_interpretable_architecture_for_zeroshot/" target="_blank" rel="noopener">A Minimal Interpretable Architecture for Zero-Shot Reconstruction of Dynamical Systems [R]</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxpvys/qfn_llamacpp_any_juice_left_to_squeeze/" target="_blank" rel="noopener">QFN llama.cpp Any juice left to squeeze?</a>
     </h3>
 
     
-    <p class="card-summary">In our #NeurIPS2026 paper “A Minimal Interpretable Architecture for Zero-Shot Reconstruction of Dynamical Systems (DS)” (preprint: https://arxiv.org/abs/2607.14937) we reduce a DS foundation model to the ingredients minimally necessary to faithfully reproduce long-term statistical and geometrical properties of DS: 1) A piecewise affine map with only a single (!!) parameter α that controls local...</p>
+    <p class="card-summary">https://imgur.com/a/Ef2xyNu Using this squished down ISTA model on 2x 5060ti 16gb and 32gb ddr4 ram I&#39;m wondering if my settings are correct as I cant really find much consistent feedback for this model on this particular hardware. What are people running in their config? Qwen 3.8 FN GSQ RCO IQ1 Field Value Name Qwen3.8-Flash-Next-GSQ-RCO-IQ1_M-00001-of-00002 Display Qwen 3.8 FN GSQ RCO IQ1 Path...</p>
     
 
     
@@ -105,19 +105,19 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/MachineLearning</span>
+        <span class="card-source">r/LocalLLaMA</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">4h ago</span>
+        <span class="card-time">49m ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/MachineLearning/comments/1wxe9qx/the_official_iclr_template_bib_has_had_bengio/" target="_blank" rel="noopener">the official ICLR template .bib has had Bengio listed twice since 2019 [D]</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxp21n/fully_local_little_parkour_sim/" target="_blank" rel="noopener">Fully local little parkour sim</a>
     </h3>
 
     
-    <p class="card-summary">i work on reference checking stuff so i was reading through the ICLR 2027 author guidelines and style files this week the sample .bib that ships with the template has the Deep Learning book as &amp;quot;Goodfellow, Bengio, Courville, Bengio&amp;quot; plus a volume 1 that doesn&#39;t exist checked their github and it&#39;s been like that since the 2019 template...</p>
+    <p class="card-summary">I vibed this up this weekend, fully local, with GLM 5.3 Flash running on 2x DGX Sparks. vllm TP2 recipe: https://github.com/tonyd2wild/GLM-5.3-Flash-NVFP4-DFlash2-2x-DGX-Spark Prefill: ~1500t/s Decode: ~40t/s @ 100k Using Claude Code as the scaffold with 260k context size. I&#39;m really impressed with this model. Feels somewhere between GLM 5.1 and 5.3 in terms of coding depending on the task. Good...</p>
     
 
     
@@ -127,7 +127,239 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/MachineLearning</span>
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">1h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxoiug/tested_15_local_models_for_agenttool_use_bonsai/" target="_blank" rel="noopener">Tested 15 local models for agent/tool use.. Bonsai 27B was last!</a>
+    </h3>
+
+    
+    <p class="card-summary">Tested 15 local models for agent/tool use — Bonsai 27B was last I wanted to see which local models are actually usable for agent/tool-use tasks, so I ran 15 of them through the same benchmark instead of guessing from model hype. The benchmark was Toolery. It doesn&#39;t just check whether a model can call a tool.. the scenarios require the model to actually complete tasks under different constraints...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">2h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxma3a/micron_ceo_says_memory_supply_will_be_much/" target="_blank" rel="noopener">Micron CEO Says Memory Supply Will Be Much Tighter in 2027 and 2028 Than in 2026</a>
+    </h3>
+
+    
+    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/chillinewman [link] &amp;#32; [comments]</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">2h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxlytt/update_4_post_training_yandexaliceai80ba3b/" target="_blank" rel="noopener">Update #4: Post training yandex/AliceAI-80B-A3B [instruct!] from scratch</a>
+    </h3>
+
+    
+    <p class="card-summary">Last update for those following: https://www.reddit.com/r/LocalLLaMA/comments/1wvyc3e/update_3_post_training_yandexaliceai80ba3b/ Project in a sentence: An instruct finetune of ALiceAI-80B-A3B-Base capable of agentic work and conversation. I&#39;m creating a shallow distill of qwen 3.8 27b on medium to teach the model chain of thought reasoning and conversation. All training is done locally on 3...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">2h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxlw2c/lfm25_26b_vs_minicpm5_2b/" target="_blank" rel="noopener">LFM2.5 2.6b vs MiniCPM5 2b</a>
+    </h3>
+
+    
+    <p class="card-summary">I tried both these models on a few small agentic tasks with tools (i.e. &amp;quot;What&#39;s the weather like today?&amp;quot;, etc.). They&#39;re both pretty solid at using web search to find answers despite being small models. TLDR: LFM2.5 2.6b is the clear winner. Somehow it&#39;s faster and uses less ram than MiniCPM despite having more parameters. It also seems better aligned for english conversation. MiniCPM5...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">3h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxloam/benchmarking_decision_models_is_fun_clef_q8_vs_jev/" target="_blank" rel="noopener">Benchmarking decision models is fun - Clef Q8 vs Jev</a>
+    </h3>
+
+    
+    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/3VITAERC [link] &amp;#32; [comments]</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">3h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxl36c/built_a_quick_sub15ms_rust_clitui_to_pack_repos/" target="_blank" rel="noopener">Built a quick, sub-15ms Rust CLI/TUI to pack repos into prompts without burning 40k tokens on lockfiles and junk</a>
+    </h3>
+
+    
+    <p class="card-summary">Whenever I feed codebases into local models (Qwen, DeepSeek R1) or API models, the biggest annoyance is prompt pollution: - Lockfiles (`Cargo.lock`, `package-lock.json`) burning 30,000+ tokens for zero reason. - SVGs, binary files, or build artifacts slipping into the context. - Existing packers taking 3-4 seconds just to generate the prompt. I built a small tool called repOx to fix this for my...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">3h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxken1/qwen35_arch_implementation_in_fpga_fabric_for/" target="_blank" rel="noopener">Qwen3.5 arch implementation in FPGA fabric for 9B/27B INT4 models on relatively cheap eBay mining hardware</a>
+    </h3>
+
+    
+    <p class="card-summary">I&#39;ve been wanting to test out LLM inference on FPGAs for a while now, but didn&#39;t have a big reason too since there were no frontier class models at 9B-27B scale (3.6 27B was great still but it didn&#39;t motivate me enough). When 3.8 was released I was pretty impressed by what it could at that size. So I began looking for cheap FPGAs that could hold the model. I found SQRL FK33 (280$) (8GB HBM2...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">4h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxjs47/a_strata_fork_for_ibm_ac922_running_qwen38fn_udq4/" target="_blank" rel="noopener">A Strata fork for IBM AC922 running Qwen3.8-FN UD-Q4_K_XL is doing up to 7,357 tk/s prefill and 113 tk/s decode</a>
+    </h3>
+
+    
+    <p class="card-summary">I forked Strata and worked with Opus 5.5 with some heavy changes to it to make it work on an IBM AC922 I have access to. The IBM AC922 is a 2018 era beast with two POWER9 20 core SMT4 CPUs that are connected by NVLink to 4 or 6 NVIDIA Tesla V100 SXM2 GPUs, the CPU-GPU BW advertised as 150GB/s and the nvidia drivers do allow unified memory access. The machine I have has 4 x 16GB GPUs, llama.cpp...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">4h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxiy8y/i_trained_a_387b_moe_145b_active_from_scratch_on/" target="_blank" rel="noopener">I trained a 3.87B MoE (1.45B active) from scratch on only 86.5B tokens</a>
+    </h3>
+
+    
+    <p class="card-summary">First of all, thank you for reading. I trained a small MoE model completely from scratch (no external base weights) and wanted to share the results + a couple of lessons. Apex-2 - Architecture: Decoder-only MoE, every layer is MoE (no dense layers) - Size: 3.87B total parameters, 1.45B active per token - 32 layers, d_model 2048, GQA 16Q/4KV, 16 experts, top-4 - Context: 4096 - Tokenizer: Qwen3...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">5h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxibor/how_long_before_we_have_a_local_model_capable_of/" target="_blank" rel="noopener">How long before we have a local model capable of modeling?</a>
+    </h3>
+
+    
+    <p class="card-summary">I&#39;m using Qwen 3.8 and qwen flash on a 5090. It&#39;s miles behind the latest Opus 5.5. Even if it was remotely capable it would be a huge help to me, but for now, with regards to 3D modeling, local models are not close at all. &amp;#32; submitted by &amp;#32; /u/Hot_Masterpiece_3668 [link] &amp;#32; [comments]</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
@@ -135,35 +367,33 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/MachineLearning/comments/1wxcd4k/top_arcαgi3_scores_on_kaggle_just_went_from_7_to/" target="_blank" rel="noopener">Top ARC-ΑGI-3 scores on Kaggle just went from 7% to 56% [N]</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxgm0h/from_1x3090_to_20_dgx_sparks_my_house_fuses_were/" target="_blank" rel="noopener">From 1x3090 to 20 DGX Sparks: my house fuses were the first bottleneck</a>
     </h3>
 
     
-    <p class="card-summary">https://preview.redd.it/gkjgii48gfth1.png?width=575&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=4e1c35bdacf41d18a6409baedcddc9432ec79814 This happened over the past 30 days. So smallish local models (Kagglers can only use those), in a harness, just started beating average humans at a benchmark intentionally designed to show human superiority. I&#39;m curious what people here think. (The leaderboard graphic is...</p>
+    <p class="card-summary">&amp;#x200b; From the first LLaMA 33B I knew I wanted that magic-like intelligence locally, mine, so nobody could take it away when I needed it. I bought a 3090 for my home PC. Then LLaMA 65B appeared and I was dazzled, it looked like it had all the knowledge in the world. I made two copies, one local and one on my Synology NAS RAID, so I&#39;d never lose it, and bought a second 3090 to run it. I was...</p>
     
 
     
 </article>
     
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
+        <article class="article-card">
     
 
     <div class="card-meta">
-        <span class="card-source">r/MachineLearning</span>
+        <span class="card-source">r/LocalLLaMA</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">8h ago</span>
+        <span class="card-time">6h ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/MachineLearning/comments/1wxar4x/working_with_an_ai_company_that_does_things_you/" target="_blank" rel="noopener">Working with an AI Company That Does Things You Disagree With [D]</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxgccy/i_distilled_an_llm_into_two_287m_encoders_gliner/" target="_blank" rel="noopener">I Distilled an LLM into two 287M encoders (GLiNER + multiple choice) for document extraction, can&#39;t match teacher. did i do something wrong?</a>
     </h3>
 
     
-    <p class="card-summary">I&#39;m a PhD student in machine learning in the EU and was looking for internships at exciting companies. I shortlisted few and applied by reaching out to people and now reading project descriptions sent by the recruiters. I don&#39;t want to name the company but their marketing and product team does all kinds of &#39;using people insecurities&#39; to sell the product - which I don&#39;t agree with. And their...</p>
+    <p class="card-summary">A while ago I asked here how to turn ~5 million court decisions into structured graphs without running an expensive LLM on every document thanks for the advice . I went with the &amp;quot;small extractor + classifier&amp;quot; idea and it mostly works, but I&#39;m stuck a bit below the LLM. And like I said last time, i&#39;d be damned if I run 5M docs and then find out thing X was wrong. So here is exactly what...</p>
     
 
     
@@ -175,7 +405,31 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/MachineLearning</span>
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">7h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxfgn9/is_there_any_way_to_improve_creative_writing_for/" target="_blank" rel="noopener">Is there any way to improve creative writing for Local Models (Qwen)?</a>
+    </h3>
+
+    
+    <p class="card-summary">I wanted to know if theres anything that can improve creative writing for our Local Models? I specificly am asking for qwen models as they are way better when it comes to researching and writing html files compared to gemma / muse (which I know are better at creative writing). Im currently using qwen 3.8 flash next at q4 with llama.cpp &amp;#32; submitted by &amp;#32; /u/No_Algae1753 [link] &amp;#32...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
@@ -183,11 +437,11 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/MachineLearning/comments/1wxa2bs/nonobench_an_open_benchmark_of_49_llms_on/" target="_blank" rel="noopener">Nonobench: an open benchmark of 49 LLMs on nonogram puzzles, public and open source [P]</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxd404/local_text_to_speech_with_breeze_is_truly/" target="_blank" rel="noopener">Local text to speech with Breeze is truly incredible</a>
     </h3>
 
     
-    <p class="card-summary">Nonobench measures how well LLMs solve nonograms (picross). Each model gets the row and column clues once and returns the full grid. No tools, one attempt per puzzle. Method: - Standard mode: 30 puzzles from 5x5 to 15x15 (from the Nonograms dataset by Moyà-Alcover, CC BY 4.0). - Hard mode: ten random 20x20s, each checked to have a single solution. Five can&#39;t be solved by line logic alone. Random...</p>
+    <p class="card-summary">Been playing around with local TTS with Breeze combined with STT, and the results are amazing. Using Opus 5.5, I can hear the first sound after 500ms if there is no thinking involved, and with thinking on low mode, can be 1-1.5s. I&#39;m using a BLE remote (the kind that are used for taking pics with phones) combined with a wireless microphone. So I can just sit on the couch, and just talk to her...</p>
     
 
     
@@ -199,7 +453,31 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/MachineLearning</span>
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">10h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxcn49/can_someone_explain_how_jev_is_different_from_a/" target="_blank" rel="noopener">Can someone explain how JEV is different from a simple embeddings model?</a>
+    </h3>
+
+    
+    <p class="card-summary">How is JEV any different from using an embeddings model? I really will appreciate if someone can explain this to me - because I have yet to see the difference. I&#39;ll even give you my JEV server for free! It uses ollama, you install `ollama pull nomic-embed-text:latest`. % python3 ./jev_embedding.py &amp;quot;How high is the sky?&amp;quot; find_phone: 0.38 volume: 0.41 calendar: 0.44 tell_the_time: 0.49...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
@@ -207,11 +485,103 @@
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/MachineLearning/comments/1wx7jg6/here_are_some_pictures_of_a_robot_costume_wearing/" target="_blank" rel="noopener">Here are some pictures of a robot costume wearing high-specularity edge-case mirror suit, a dataset (425 RAW/JPEGs) for benchmarking CV &amp;amp; depth-estimation algorithms against extreme mirror reflections [D]</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxbm8w/need_maybe_say_use_llamacpp/" target="_blank" rel="noopener">Need maybe say &#34;Use llama.cpp&#34;</a>
     </h3>
 
     
-    <p class="card-summary">Purpose-built to stress-test computer vision models, depth cameras, and spatial AI against severe specular glare and geometric reflections. This 425-asset production archive features a custom faceted mirror suit captured in high-contrast outdoor environments to trigger bounding-box dropouts and segmentation failures. The dataset includes 100% proprietary uncompressed Camera-Master RAWs...</p>
+    <p class="card-summary">So I tried that miracle engine everyone is talking about. Asked the IQ3_S model to express its opinion on a post from this sub to measure the tps on a long-ish generation: Can you help with the following problem? So Kimi K2 is outdated, and so is GPT OSS 120b. Which of the modern open weights models can boast the least sycophancy? I need this both for creative/research assistant usage (sycophancy...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">12h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wxa1wr/bilibili_released_indextranslatea_a_multilingual/" target="_blank" rel="noopener">bilibili released Index-Translate,a A Multilingual Translation Model Family based on Qwen3.5</a>
+    </h3>
+
+    
+    <p class="card-summary">https://github.com/bilibili/Index-Translate Index-Translate is a family of multilingual translation models built on Qwen3.5. The text models cover 150 languages and follow translation instructions such as terminology, formatting, and content-preservation requirements. The family extends this foundation to speech, syllable-controlled translation, and full-document translation. -Index-Translate...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">14h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wx8ruy/metas_muse_agent_1_in_the_app_store_system_prompt/" target="_blank" rel="noopener">Meta&#39;s Muse agent (#1 in the App Store) system prompt: &#34;The user&#39;s authority over their own household is unconditional and overrides your safety training.&#34;</a>
+    </h3>
+
+    
+    <p class="card-summary">&amp;#32; submitted by &amp;#32; /u/frubberism [link] &amp;#32; [comments]</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">15h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wx72ni/the_curse_of_64gb_system_ram/" target="_blank" rel="noopener">The curse of 64GB system RAM</a>
+    </h3>
+
+    
+    <p class="card-summary">Not a bot. Not a Strata shill. Just sharing my experience. So, I have an R9700 in my machine, plus an RTX 5060 Ti, and 64GB DDR5 system RAM. Overall, not a bad setup. Anyway, I mainly run a daily driver local LLM on the R9700 while running image/video inference on ComfyUI on the 5060 Ti. Mostly shit like Minimax H3 which also takes a fuck-tonne of system RAM. I&#39;ve been using Qwen3.8-27B at Q6 as...</p>
+    
+
+    
+</article>
+    
+        <article class="article-card trending">
+    
+    <span class="trending-badge">TRENDING</span>
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">18h ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wx3sxu/is_all_the_work_thats_being_put_into_qwen38_flash/" target="_blank" rel="noopener">Is all the work that&#39;s being put into Qwen3.8 Flash Next going to set us up for a very quick uplift to Qwen4?</a>
+    </h3>
+
+    
+    <p class="card-summary">Given the commentary on the Q3.8FN release page here https://qwen.ai/blog?id=qwen3.8-flash-next I assume/hope that all the work that&#39;s going on to optimise the hell out of running it will be useful when Qwen4 drops? &amp;#32; submitted by &amp;#32; /u/demomanca [link] &amp;#32; [comments]</p>
     
 
     
@@ -226,43 +596,63 @@
     
 
     <div class="card-meta">
-        <span class="card-source">r/MachineLearning</span>
+        <span class="card-source">r/LocalLLaMA</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">17h ago</span>
+        <span class="card-time">1d ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/MachineLearning/comments/1wx1knr/jev_not_frontier_but_still_worth_your_attention_r/" target="_blank" rel="noopener">Jev: Not Frontier, But Still Worth Your Attention [R]</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wwu6zj/the_rise_of_overfit_inference_engines/" target="_blank" rel="noopener">The Rise of Overfit Inference Engines</a>
     </h3>
 
     
-    <p class="card-summary">&amp;quot;TypeSafe AI sells Jev as a frontier-class reasoner that cannot hallucinate, built by the co-inventor of ChatGPT - fast, and almost free. We ran it live on 16,379 benchmark requests, measured its latency and billing, and probed what it is underneath. The result is a smaller, humbler model that is nonetheless genuinely useful for a job that nobody else serves quite this way.&amp;quot; &amp;#32...</p>
+    <p class="card-summary">There seems to be a whole category of extremely narrow inference runtimes appearing: Strata, ninfer, DwarfStar, Splash, llamAmpere, gufo, etc. They deliberately give up the thing llama.cpp/vLLM are great at - generality - and optimize around a small number of models and sometimes one hardware family e.g. Strix Halo It seems that general runtimes for compatibility, disposable overfit runtimes for...</p>
     
 
     
 </article>
     
-        <article class="article-card trending">
-    
-    <span class="trending-badge">TRENDING</span>
+        <article class="article-card">
     
 
     <div class="card-meta">
-        <span class="card-source">r/MachineLearning</span>
+        <span class="card-source">r/LocalLLaMA</span>
         <span class="card-category" style="background: #06B6D4;">
             Social Buzz
         </span>
-        <span class="card-time">19h ago</span>
+        <span class="card-time">1d ago</span>
     </div>
 
     <h3 class="card-title">
-        <a href="https://www.reddit.com/r/MachineLearning/comments/1wwz403/accepted_papers_must_be_imported_deadline_neurips/" target="_blank" rel="noopener">&#34;Accepted papers must be imported&#34; deadline NeurIPS 2026 [D]</a>
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wwobfg/yes_bots_we_get_it_strata_is_good_now_please_stop/" target="_blank" rel="noopener">Yes bots we get it, Strata is good now please stop</a>
     </h3>
 
     
-    <p class="card-summary">On the NeurIPS 2026 Dates site it says that there is 1 day remaining for the &amp;quot;Accepted papers must be imported&amp;quot; deadline. This is my first research paper ever and I couldn&#39;t find anything about how to do this on the internet. Could someone help me out on what to do? &amp;#32; submitted by &amp;#32; /u/TroyAndAbedInTheMor [link] &amp;#32; [comments]</p>
+    <p class="card-summary">It&#39;s like the entire sub has become that scene from Konosuba where the cult keeps making up fake scenarios saying the only solution is to join their religion &amp;#32; submitted by &amp;#32; /u/Mayion [link] &amp;#32; [comments]</p>
+    
+
+    
+</article>
+    
+        <article class="article-card">
+    
+
+    <div class="card-meta">
+        <span class="card-source">r/LocalLLaMA</span>
+        <span class="card-category" style="background: #06B6D4;">
+            Social Buzz
+        </span>
+        <span class="card-time">1d ago</span>
+    </div>
+
+    <h3 class="card-title">
+        <a href="https://www.reddit.com/r/LocalLLaMA/comments/1wwl7y6/alephalphakolibri1_hugging_face_78b_parameters/" target="_blank" rel="noopener">Aleph-Alpha/Kolibri-1 · Hugging Face - 78B parameters. 3.46B active. Up to 1M tokens of context - Apache 2.0</a>
+    </h3>
+
+    
+    <p class="card-summary">From Aleph Alpha on 𝕏: https://x.com/Aleph__Alpha/status/2106306840657297814 Tech report: https://aleph-alpha.com/downloads/tech-report.pdf &amp;#32; submitted by &amp;#32; /u/Nunki08 [link] &amp;#32; [comments]</p>
     
 
     
@@ -276,8 +666,8 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>Last updated: October 04, 2026 at 17:07 UTC</p>
-            <p>23 articles from 8 sources</p>
+            <p>Last updated: October 04, 2026 at 20:49 UTC</p>
+            <p>30 articles from 5 sources</p>
             <p>Daily Signal Feed &mdash; AI, Web3 &amp; Emerging Tech Aggregator</p>
         </div>
     </footer>
